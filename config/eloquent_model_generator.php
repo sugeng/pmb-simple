@@ -1,0 +1,19 @@
+<?php
+/**
+ * Created By: Sugeng
+ * Date: 23/04/20
+ * Time: 08.27
+ */
+
+return [
+    'namespace'       => 'App',
+    'base_class_name' => \Illuminate\Database\Eloquent\Model::class,
+    'output_path'     => null,
+    'no_timestamps'   => null,
+    'date_format'     => null,
+    'connection'      => null,
+    'backup'          => null,
+    'db_types'        => [
+        'enum' => 'string',
+    ],
+];
