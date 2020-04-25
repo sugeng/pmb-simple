@@ -108,8 +108,7 @@
                                     <i class="promo-like fa fa-thumbs-up"></i>
                                     <div class="promo-like-text">
                                         <h2>Gratis Biaya Pendaftaran Mahasiswa Baru.</h2>
-                                        <p>Telah dibuka Penerimaan Mahasiswa Baru untuk periode <br> Untuk semua program
-                                           studi S1 dan S2</p>
+                                        <p>Ujian Saringan Masuk (USM) via Online CBT (Computer Based Test) atau bebas Ujian bagi yang memiliki raport yang memenuhi syarat.</p>
                                     </div>
                                 </div>
                             </div>
