@@ -72,7 +72,7 @@
                     <li><a href="#gelombang">Gelombang</a></li>
                     <li><a href="#program-studi">Program Studi</a></li>
                     <li><a href="#biaya-kuliah">Biaya Kuliah</a></li>
-                    <li><a href="#persyaratan">Persyaratan</a></li>
+                    <li><a href="#persyaratan">Syarat dan Kondisi</a></li>
                     <li><a href="#ujian">Ujian</a></li>
                     <li><a href="#formulir">Registrasi Online</a></li>
                     <li><a href="#partner">Partner Kami</a></li>
@@ -450,7 +450,7 @@
 
 <div class="choose-us-block content text-center margin-bottom-40" id="persyaratan">
     <div class="container">
-        <h2>Syarat Pendaftaran <strong>Ujian Saringan Masuk (USM)</strong></h2>
+        <h2>Syarat dan Kondisi <strong>Penerimaan Mahasiswa Baru UPDM(B)</strong></h2>
         <h4>Untuk mengikuti USM Universitas Prof. Dr. Moestopo (Beragama) harap memenuhi persyaratan-persyaratan berikut
             :</h4>
         <div class="row">
@@ -463,15 +463,12 @@
                         <div class="panel-heading">
                             <h5 class="panel-title">
                                 <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1"
-                                   href="#accordion1_1">Melunasi Pembayaran Formulir Pendaftaran.</a>
+                                   href="#accordion1_1">Jenjang S1 Fakultas Kedokteran.</a>
                             </h5>
                         </div>
                         <div id="accordion1_1" class="panel-collapse collapse in">
                             <div class="panel-body">
-                                <p>Calon peserta USM harap melunasi pembayaran Formulir pendaftaran sesuai dengan
-                                   pilihan program studi.
-                                   Bagi peserta yang mendaftar melalui pendaftaran online dapat melunasinya dengan
-                                   membayar melalui Bank BNI berdasarkan No. SPC.</p>
+                                <p>Untuk peserta yang akan memilih Fakultas Kedokteran harus merupakan tamatan SMA Jurusan IPA</p>
                             </div>
                         </div>
                     </div>
@@ -479,15 +476,12 @@
                         <div class="panel-heading">
                             <h5 class="panel-title">
                                 <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1"
-                                   href="#accordion1_2">Melengkapi pengisian data-data peserta USM</a>
+                                   href="#accordion1_2">Jenjang S1 Non Fakultas Kedokteran.</a>
                             </h5>
                         </div>
                         <div id="accordion1_2" class="panel-collapse collapse">
                             <div class="panel-body">
-                                <p>Peserta harus melengkapi data-data melalui Anjungan Peserta Ujian untuk dapat
-                                   mencetak Kartu Ujian Saringan Masuk</p>
-                                <p>Kelengkapan data yang dimasukkan harus dilengkapi agar peserta dapat mencetak Kartu
-                                   Ujian sebagai bukti yang akan dibawa pada saat ujian dilaksanakan.</p>
+                                <p>Peserta merupakan tamatan dari SMA IPA/IPS atau SMK semua jurusan.</p>
                             </div>
                         </div>
                     </div>
@@ -495,15 +489,32 @@
                         <div class="panel-heading">
                             <h5 class="panel-title">
                                 <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1"
-                                   href="#accordion1_3">Menyiapkan Foto ukuran 4x6</a>
+                                   href="#accordion1_3">Mengisi form pendaftaran sesuai program studi yang akan diambil.</a>
                             </h5>
                         </div>
-                        <div id="accordion1_3" class="panel-collapse collapse">
-                            <div class="panel-body">
-                                <p></p>
-                                <p>Peserta diharapkan menyediakan foto dengan ukuran 4x6cm sebanyak 2 buah yang akan
-                                   digunakan untuk identifikasi pada saat ujian dilaksanakan.</p>
-                            </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h5 class="panel-title">
+                                <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1"
+                                   href="#accordion1_4">Mengikuti Ujian Saringan Masuk CBT Online, kecuali Anda yang raportnya memenuhi persyaratan  setelah mendapat konfirmasi.</a>
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h5 class="panel-title">
+                                <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1"
+                                   href="#accordion1_5">Khusus Pendaftar Fakultas Kedokteran Gigi melakukan Tes Wawancara dan Tes Kesehatan secara mandiri melalui lembaga yang kami rujukan.</a>
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h5 class="panel-title">
+                                <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1"
+                                   href="#accordion1_5">Reminder Ujian Saringan Masuk via CBT Online dan ID Token akan kami konfirmasi H-1 sesuai jadwalnya.</a>
+                            </h5>
                         </div>
                     </div>
                 </div>
