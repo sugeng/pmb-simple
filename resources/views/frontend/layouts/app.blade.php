@@ -101,13 +101,13 @@
                         <div class="center-block-body">
                             <h2 class="margin-bottom-20 animate-delay carousel-title-v1"
                                 data-animation="animated fadeInDown">
-                                PMB Periode <span class="color-red">One Page</span> Telah dibuka.
+                                Universitas Prof. Dr. Moestopo (Beragama) Peduli <span class="color-red">COVID 19</span>
                             </h2>
                             <div class="animated flipInX">
                                 <div class="hidden-xs">
                                     <i class="promo-like fa fa-thumbs-up"></i>
                                     <div class="promo-like-text">
-                                        <h2>Buruan segera daftar online.</h2>
+                                        <h2>Gratis Biaya Pendaftaran Mahasiswa Baru.</h2>
                                         <p>Telah dibuka Penerimaan Mahasiswa Baru untuk periode <br> Untuk semua program
                                            studi S1 dan S2</p>
                                     </div>
@@ -723,8 +723,7 @@
 </div>
 <!-- END PRE-FOOTER -->
 
-<div id="registration-non-fkg" class="modal fade bd-example-modal-lg" style="margin-top: 80px;" tabindex="-1"
-     role="dialog">
+<div id="registration-non-fkg" class="modal fade bd-example-modal-lg" style="margin-top: 80px;" tabindex="-1" role="dialog">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -807,7 +806,7 @@
                                 <div class="form-actions">
                                     <div class="row">
                                         <div class="float-right">
-                                            <button type="submit" id="registration-button" class="btn btn-success"><i
+                                            <button type="submit" id="registration-button" class="btn btn-success right"><i
                                                     class="fa fa-pencil"></i> Registrasi
                                             </button>
                                         </div>
