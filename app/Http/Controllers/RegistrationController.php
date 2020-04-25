@@ -10,14 +10,8 @@ use Illuminate\Http\Request;
  */
 class RegistrationController extends Controller
 {
-    public function index(Request $request, Registrant $registrant)
+    public function index(Request $request)
     {
-
-
-        if ($email) {
-            return "email ada";
-        }
-
         return view("registration.index")->with(['data' => $request->all()]);
     }
 
@@ -44,9 +38,15 @@ class RegistrationController extends Controller
     {
         $registrant = $registrant->where('email', $request->get('email'))->first();
 
+        if ($registrant) {
+            return response()->json([
+                "result"  => "error",
+                "message" => "Email Anda {$request->get("email")} sudah terdaftar atas nama {$registrant->nmmhs}"
+            ]);
+        }
+
         return response()->json([
-            "result"  => "error",
-            "message" => "Email Anda {$request->get("email")} sudah terdaftar atas nama {$registrant->nmmhs}"
+            "result" => "success"
         ]);
     }
 }

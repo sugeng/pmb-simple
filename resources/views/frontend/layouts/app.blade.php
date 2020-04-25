@@ -60,7 +60,8 @@
             <!-- Logo BEGIN -->
             <div class="col-md-2 col-sm-2">
                 <a class="scroll site-logo" href="#promo-block"><img
-                        src="{!! asset("assets/onepage/img/logo.png") !!}" alt="Pendaftaran Online UPDM(B)" height="60" style="top: 2px;position: fixed;left: 30px;"></a>
+                        src="{!! asset("assets/onepage/img/logo.png") !!}" alt="Pendaftaran Online UPDM(B)" height="60"
+                        style="top: 2px;position: fixed;left: 30px;"></a>
             </div>
             <!-- Logo END -->
             <a href="javascript:void(0);" class="mobi-toggler"><i class="fa fa-bars"></i></a>
@@ -106,7 +107,10 @@
                                     <i class="promo-like fa fa-thumbs-up"></i>
                                     <div class="promo-like-text">
                                         <h2>Gratis Biaya Pendaftaran Mahasiswa Baru.</h2>
-                                        <p>Ujian Saringan Masuk (USM) via <a href="https://pmb-cbt.moestopo.ac.id/" target="_blank">Online CBT (Computer Based Test)</a> atau bebas Ujian bagi yang memiliki raport yang memenuhi syarat.</p>
+                                        <p>Ujian Saringan Masuk (USM) via <a href="https://pmb-cbt.moestopo.ac.id/"
+                                                                             target="_blank">Online CBT (Computer Based
+                                                                                             Test)</a> atau bebas Ujian
+                                           bagi yang memiliki raport yang memenuhi syarat.</p>
                                         <p>Buruan segera daftar fakultas yang Anda minati.</p>
                                     </div>
                                 </div>
@@ -122,9 +126,18 @@
 <div class="about-block content content-center" id="gelombang">
     <div class="container">
         <h2>Pendaftaran Mahasiswa Baru <strong>Kampus Merah Putih</strong></h2>
-        <h4>Universitas Prof. Dr. Moestopo (Beragama) membuka pendaftaran untuk Mahasiswa Baru <strong>Angkatan {{ $registration_period->thsms }}</strong>.
-            Penerimaan Mahasiswa Baru akan dibagi menjadi <strong>beberapa gelombang</strong> pendaftaran.<br/>
-            Anda dapat menentukan gelombang berapa untuk menjalankan Ujian Saringan Masuk melalui <strong>https://cama.moestopo.ac.id</strong>.
+        <h4>
+            Mulai hari ini Universitas Prof. Dr. Moestopo (Beragama) <strong>meng-Gratiskan biaya Pendaftaran Mahasiswa Baru</strong>
+            baik jenjang S1 dan S2 sebagai bentuk keprihatinan <strong>Pandemi COVID-19</strong> yang melanda dunia.
+        </h4>
+        <h4>
+            Ujian Saringan Masuk (USM) dilakukan via online seperti yang tertera pada tabel jadwal dibawah ini melalui link <a href="https://pmb-cbt.moestopo.ac.id">CBT UPDM(B)</a>
+        </h4>
+        <h4>
+            Bagi Anda yang memiliki <strong>raport</strong> sesuai persyaratan kami, akan dinyatakan <strong>bebas Tes Ujian Saringan Masuk VBT Online</strong>
+        </h4>
+        <h4>
+            Bagi Anda khususnya peminat <strong>Fakultas Kedokteran Gigi</strong>, selain Ujian Saringan Masuk CBT Online, diwajibkan melakukan <strong>Test Wawancara dan Kesehatan Mandiri</strong> sesuai rujukan kami. Kedua hasil tersebut wajib dikirim ke email <strong>pmb.moestopo.ac.id</strong> atau via WA ke nomor <strong>+62 9999999</strong>
         </h4>
 
         <table class="table">
@@ -548,8 +561,8 @@
                         </div>
                     </div>
                     <div class="pricing-footer">
-                        <a class="btn btn-default" href="#online-registration" data-toggle="modal"
-                           data-target="#registration-fe">
+                        <a class="btn btn-default" href="#reg-feb" data-toggle="modal"
+                           data-target="#reg-feb">
                             Registrasi</a>
                     </div>
                 </div>
@@ -567,8 +580,8 @@
                         </div>
                     </div>
                     <div class="pricing-footer">
-                        <a class="btn btn-default" href="#online-registration" data-toggle="modal"
-                           data-target="#registration-non-fkg">
+                        <a class="btn btn-default" href="#reg-fikom" data-toggle="modal"
+                           data-target="#reg-fikom">
                             Registrasi</a>
                     </div>
                 </div>
@@ -586,7 +599,9 @@
                         </div>
                     </div>
                     <div class="pricing-footer">
-                        <a class="btn btn-default" href="#lokasi">Registrasi</a>
+                        <a class="btn btn-default" href="#reg-fkg" data-toggle="modal"
+                           data-target="#reg-fkg">
+                            Registrasi</a>
                     </div>
                 </div>
             </div>
@@ -603,7 +618,9 @@
                         </div>
                     </div>
                     <div class="pricing-footer">
-                        <a class="btn btn-default" href="#lokasi">Registrasi</a>
+                        <a class="btn btn-default" href="#reg-ft" data-toggle="modal"
+                           data-target="#reg-ft">
+                            Registrasi</a>
                     </div>
                 </div>
             </div>
@@ -620,8 +637,8 @@
                         </div>
                     </div>
                     <div class="pricing-footer">
-                        <a class="btn btn-default" href="#online-registration" data-toggle="modal"
-                           data-target="#registration-fisip">
+                        <a class="btn btn-default" href="#reg-fisip" data-toggle="modal"
+                           data-target="#reg-fisip">
                             Registrasi</a>
                     </div>
                 </div>
@@ -637,7 +654,8 @@
                 <img src="{!! asset("") !!}assets/onepage/img/google-education.png" height="100" alt="Google Education">
             </div>
             <div class="col-md-6 col-sm-12 col-xs-12">
-                <img src="{!! asset("") !!}assets/onepage/img/microsoft-education.png" height="80" alt="Microsoft Education">
+                <img src="{!! asset("") !!}assets/onepage/img/microsoft-education.png" height="80"
+                     alt="Microsoft Education">
             </div>
         </div>
     </div>
@@ -677,44 +695,24 @@
 </div>
 <!-- END PRE-FOOTER -->
 
-<div id="registration-non-fkg" class="modal fade bd-example-modal-lg" data-backdrop="static" style="margin-top: 80px;" tabindex="-1" role="dialog">
+<div id="reg-feb" class="modal fade bd-example-modal-lg" data-backdrop="static" style="margin-top: 80px;" tabindex="-1"
+     role="dialog">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title">Pendaftaran Online NON Kedokteran Gigi</h5>
+                <h5 class="modal-title">Pendaftaran Online FAKULTAS EKONOMI DAN BISNIS</h5>
             </div>
             <div class="modal-body">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6 col-xs-12 col-sm-12">
                             <div class="portlet-body">
-                                @if ($errors->has("error"))
-                                    <div class="alert alert-danger" style="text-align: left;">
-                                        @foreach ($errors->all() as $error)
-                                            {{ $error }}
-                                        @endforeach
-                                    </div>
-                                @endif
-                                @if($messages = Session::get('messages'))
-                                    <div class="alert alert-danger" style="text-align: left;">
-                                        <strong>Peringatan!</strong>
-                                        <p>Alamat email Anda sudah terdaftar sebagai Peserta USM.
-                                           Anda tidak dapat mendaftar dengan alamat email yang sama karena :</p><br/>
-                                        <ul>
-                                            @foreach($messages as $message)
-                                                <li>{{ $message }}</li>
-                                            @endforeach
-                                        </ul>
-                                        <br/>
-                                        {{ Form::open(['route' => 'registration.resend', 'id' => 'resend-form']) }}
-                                        {{ Form::hidden('email', Session::get('email')) }}
-                                        <button type="submit" id="resend" class="btn btn-lg red">Kirim Ulang Email
-                                                                                                 Konfirmasi
-                                        </button>
-                                        {{ Form::close() }}
-                                    </div>
-                                @endif
-                                {{ Form::open(['route' => "registration.registered", 'class' => 'form registration', 'role' => 'form', 'method' => 'get']) }}
+                                {{ Form::open([
+    'route' => "registration.index",
+    'class' => 'form registration',
+    'data-action' => route("registration.registered"),
+    'role' => 'form',
+    'method' => 'get']) }}
                                 <div class="form-body">
                                     <div class="row">
                                         <div class="col-md-12">
@@ -750,7 +748,272 @@
                                                     <div class="input-group">
                                                         <span class="input-group-addon"><i
                                                                 class="fa fa-graduation-cap"></i></span>
-                                                        {{ Form::select('kdju1', ["" => "", "11" => "KEDOKTERAN GIGI", "21" => "ILMU ADMINISTRASI PUBLIK", "22" => "ILMU HUBUNGAN INTERNASIONAL", "31" => "MANAJEMEN", "32" => "AKUNTANSI", "41" => "ILMU KOMUNIKASI", "51" => "TEKNIK PERTAMBANGAN", "52" => "TEKNIK INDUSTRI"], '', ['class' => 'form-control', 'id' => 'program-studi']) }}
+                                                        {{ Form::select('kdju1', ["" => "", "31" => "MANAJEMEN", "32" => "AKUNTANSI"], '', ['class' => 'form-control', 'id' => 'program-studi']) }}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+                <button type="submit" id="registration-button" class="btn btn-success">Registrasi</button>
+            </div>
+            {{ Form::close() }}
+        </div>
+    </div>
+</div>
+
+<div id="reg-fikom" class="modal fade bd-example-modal-lg" data-backdrop="static" style="margin-top: 80px;" tabindex="-1"
+     role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Pendaftaran Online FAKULTAS ILMU KOMUNIKASI</h5>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-xs-12 col-sm-12">
+                            <div class="portlet-body">
+                                {{ Form::open([
+    'route' => "registration.registered",
+    'class' => 'form registration',
+    'role' => 'form',
+    'method' => 'get']) }}
+                                <div class="form-body">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <div class="col-md-10">
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon"><i class="fa fa-envelope-o"></i></span>
+                                                        {{ Form::text('email', '', ['class' => 'form-control', 'id' => 'email', 'placeholder' => 'Alamat Email']) }}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br/>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <div class="col-md-12">
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon"><i
+                                                                class="fa fa-sun-o"></i></span>
+                                                        {{ Form::select('stpid', ["" => "", "B" => "BARU", "P" => "PINDAHAN"], '', ['class' => 'form-control', 'id' => 'status-masuk']) }}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+                <button type="submit" id="registration-button" class="btn btn-success">Registrasi</button>
+            </div>
+            {{ Form::close() }}
+        </div>
+    </div>
+</div>
+
+<div id="reg-fkg" class="modal fade bd-example-modal-lg" data-backdrop="static" style="margin-top: 80px;" tabindex="-1"
+     role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Pendaftaran Online FAKULTAS KEDOKTERAN GIGI</h5>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-xs-12 col-sm-12">
+                            <div class="portlet-body">
+                                {{ Form::open([
+    'route' => "registration.registered",
+    'class' => 'form registration',
+    'role' => 'form',
+    'method' => 'get']) }}
+                                <input type="hidden" value="11" name="kdju1" />
+                                <div class="form-body">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <div class="col-md-10">
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon"><i class="fa fa-envelope-o"></i></span>
+                                                        {{ Form::text('email', '', ['class' => 'form-control', 'id' => 'email', 'placeholder' => 'Alamat Email']) }}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br/>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <div class="col-md-12">
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon"><i
+                                                                class="fa fa-sun-o"></i></span>
+                                                        {{ Form::select('stpid', ["" => "", "B" => "BARU"], '', ['class' => 'form-control', 'id' => 'status-masuk']) }}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+                <button type="submit" id="registration-button" class="btn btn-success">Registrasi</button>
+            </div>
+            {{ Form::close() }}
+        </div>
+    </div>
+</div>
+
+<div id="reg-ft" class="modal fade bd-example-modal-lg" data-backdrop="static" style="margin-top: 80px;" tabindex="-1"
+     role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Pendaftaran Online FAKULTAS TEKNIK</h5>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-xs-12 col-sm-12">
+                            <div class="portlet-body">
+                                {{ Form::open([
+    'route' => "registration.registered",
+    'class' => 'form registration',
+    'role' => 'form',
+    'method' => 'get']) }}
+                                <div class="form-body">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <div class="col-md-10">
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon"><i class="fa fa-envelope-o"></i></span>
+                                                        {{ Form::text('email', '', ['class' => 'form-control', 'id' => 'email', 'placeholder' => 'Alamat Email']) }}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br/>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <div class="col-md-12">
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon"><i
+                                                                class="fa fa-sun-o"></i></span>
+                                                        {{ Form::select('stpid', ["" => "", "B" => "BARU", "P" => "PINDAHAN"], '', ['class' => 'form-control', 'id' => 'status-masuk']) }}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br/>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <div class="col-md-12">
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon"><i
+                                                                class="fa fa-graduation-cap"></i></span>
+                                                        {{ Form::select('kdju1', ["" => "", "51" => "TEKNIK PERTAMBANGAN", "52" => "TEKNIK INDUSTRI"], '', ['class' => 'form-control', 'id' => 'program-studi']) }}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+                <button type="submit" id="registration-button" class="btn btn-success">Registrasi</button>
+            </div>
+            {{ Form::close() }}
+        </div>
+    </div>
+</div>
+
+<div id="reg-fisip" class="modal fade bd-example-modal-lg" data-backdrop="static" style="margin-top: 80px;" tabindex="-1"
+     role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Pendaftaran Online FAKULTAS ILMU SOSIAL DAN ILMU POLITIK</h5>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-xs-12 col-sm-12">
+                            <div class="portlet-body">
+                                {{ Form::open([
+    'route' => "registration.registered",
+    'class' => 'form registration',
+    'role' => 'form',
+    'method' => 'get']) }}
+                                <div class="form-body">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <div class="col-md-10">
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon"><i class="fa fa-envelope-o"></i></span>
+                                                        {{ Form::text('email', '', ['class' => 'form-control', 'id' => 'email', 'placeholder' => 'Alamat Email']) }}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br/>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <div class="col-md-12">
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon"><i
+                                                                class="fa fa-sun-o"></i></span>
+                                                        {{ Form::select('stpid', ["" => "", "B" => "BARU", "P" => "PINDAHAN"], '', ['class' => 'form-control', 'id' => 'status-masuk']) }}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br/>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <div class="col-md-12">
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon"><i
+                                                                class="fa fa-graduation-cap"></i></span>
+                                                        {{ Form::select('kdju1', ["" => "", "21" => "ILMU ADMINISTRASI PUBLIK", "22" => "ILMU HUBUNGAN INTERNASIONAL"], '', ['class' => 'form-control', 'id' => 'program-studi']) }}
                                                     </div>
                                                 </div>
                                             </div>
@@ -777,26 +1040,12 @@
         <div class="row">
             <!-- BEGIN COPYRIGHT -->
             <div class="col-md-4 col-sm-4">
-                <div class="copyright">2014 © Metronic One Page. ALL Rights Reserved.</div>
+                <div class="copyright">2020 © Universitas Prof. Dr. Moestopo (Beragama).</div>
             </div>
             <!-- END COPYRIGHT -->
-            <!-- BEGIN SOCIAL ICONS -->
-            <div class="col-md-4 col-sm-4">
-                <ul class="social-icons">
-                    <li><a class="rss" data-original-title="rss" href="javascript:void(0);"></a></li>
-                    <li><a class="facebook" data-original-title="facebook" href="javascript:void(0);"></a></li>
-                    <li><a class="twitter" data-original-title="twitter" href="javascript:void(0);"></a></li>
-                    <li><a class="googleplus" data-original-title="googleplus" href="javascript:void(0);"></a></li>
-                    <li><a class="linkedin" data-original-title="linkedin" href="javascript:void(0);"></a></li>
-                    <li><a class="youtube" data-original-title="youtube" href="javascript:void(0);"></a></li>
-                    <li><a class="vimeo" data-original-title="vimeo" href="javascript:void(0);"></a></li>
-                    <li><a class="skype" data-original-title="skype" href="javascript:void(0);"></a></li>
-                </ul>
-            </div>
-            <!-- END SOCIAL ICONS -->
             <!-- BEGIN COPYRIGHT -->
             <div class="col-md-4 col-sm-4 text-right">
-                <p class="powered">Powered by: <a href="http://www.keenthemes.com/">KeenThemes.com</a></p>
+                <p class="powered">Powered by: <a href="https://moestopo.ac.id/">Universitas Prof. Dr. Moestopo (Beragama)</a></p>
             </div>
             <!-- END COPYRIGHT -->
         </div>
@@ -826,34 +1075,33 @@
 <script src="{!! asset("assets/onepage/scripts/layout.js") !!}" type="text/javascript"></script>
 <script src="{!! asset("assets/pages/scripts/bs-carousel.js") !!}" type="text/javascript"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8.19.0/dist/sweetalert2.all.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8.19.0/dist/sweetalert2.min.js"></script>
 <script>
     jQuery(document).ready(function () {
         Layout.init();
 
-        $(".registration").submit(function(e) {
+        $(".registration").submit(function (e) {
             e.preventDefault();
 
             let form = $(this);
-            let url = form.attr('action');
+            let url  = form.attr('data-action');
 
             $.ajax({
-                type: "GET",
-                url: url,
-                data: form.serialize(), // serializes the form's elements.
-                success: function(data)
-                {
+                type   : "GET",
+                url    : url,
+                data   : form.serialize(),
+                success: function (data) {
                     if (data.result === "error") {
                         Swal.fire({
-                            icon: 'error',
+                            icon : 'error',
                             title: 'Email Sudah Terdaftar',
-                            text: data.message,
-                        })
+                            text : data.message,
+                        });
+                    } else {
+                        window.location = "{!! route('registration.index') !!}/" + form.serialize();
                     }
                 }
             });
-
-
         });
     });
 </script>
