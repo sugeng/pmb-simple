@@ -18,6 +18,8 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+Route::get("registered", "RegistrationController@registered")->name("registration.registered");
+
 Route::get('province', "Api\ProvinceController@search");
 Route::get('regency', "Api\RegencyController@search");
 Route::get('school', "Api\SchoolController@search");

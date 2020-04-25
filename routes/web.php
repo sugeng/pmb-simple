@@ -14,18 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', "FrontendController@index");
-
-Route::get("registration", function () {
-    return view('registration.index');
-});
-
-Route::post("registration", function (\Illuminate\Http\Request $request) {
-    (new \App\Libraries\Registration\Registration(
-        new \App\Libraries\Models\Registrant(),
-        $request->all()
-    ))->store();
-});
+Route::get("registration", "RegistrationController@index")->name("registration.index");
+Route::post("registration", "RegistrationController@store")->name("registration.store");
 
 Route::get("test", function () {
-    return \App\Libraries\Models\RegistrationNumber::registrationNumber('2020', '4');
+    return view("registration.confirmation_page");
+    //return \App\Libraries\Models\RegistrationNumber::registrationNumber('2020', '4');
 });

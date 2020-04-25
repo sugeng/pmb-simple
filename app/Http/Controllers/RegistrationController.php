@@ -1,5 +1,7 @@
 <?php namespace App\Http\Controllers;
-use App\Http\Requests\Registration;
+
+use App\Libraries\Models\Registrant;
+use Illuminate\Http\Request;
 
 /**
  * Created By: Sugeng
@@ -8,13 +10,43 @@ use App\Http\Requests\Registration;
  */
 class RegistrationController extends Controller
 {
-    public function index()
+    public function index(Request $request, Registrant $registrant)
     {
 
+
+        if ($email) {
+            return "email ada";
+        }
+
+        return view("registration.index")->with(['data' => $request->all()]);
     }
 
-    public function store(Registration $registration)
+    public function store(Request $request)
     {
-        $validated = $registration->validated();
+//        $request->validate([
+//            'nama'         => 'required',
+//            'email'        => 'required|unique:msmhb',
+//            'mobile_phone' => 'required',
+//            'departement'  => 'required',
+//            'nisn'         => 'required',
+//            'school_name'  => 'required',
+//        ]);
+
+        (new \App\Libraries\Registration\Registration(
+            new \App\Libraries\Models\Registrant(),
+            $request->all()
+        ))->store();
+
+        return view("registration.confirmation_page");
+    }
+
+    public function registered(Request $request, Registrant $registrant)
+    {
+        $registrant = $registrant->where('email', $request->get('email'))->first();
+
+        return response()->json([
+            "result"  => "error",
+            "message" => "Email Anda {$request->get("email")} sudah terdaftar atas nama {$registrant->nmmhs}"
+        ]);
     }
 }

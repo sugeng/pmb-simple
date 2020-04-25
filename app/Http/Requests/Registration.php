@@ -13,7 +13,7 @@ class Registration extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -25,7 +25,7 @@ class Registration extends FormRequest
     {
         return [
             'nama'         => 'required',
-            'email'        => 'required|unique:registrant',
+            'email'        => 'required|unique:msmhb',
             'mobile_phone' => 'required',
             'departement'  => 'required',
             'nisn'         => 'required',

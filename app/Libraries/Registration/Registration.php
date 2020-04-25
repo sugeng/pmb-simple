@@ -33,11 +33,11 @@ class Registration
 
     public function store()
     {
+        $this->storeRegistrant();
+
         $this->uploadRaports();
 
         $this->uploadAvatar();
-
-        $this->storeRegistrant();
 
         event(new Registered($this->registration_data['registration_number']));
     }
