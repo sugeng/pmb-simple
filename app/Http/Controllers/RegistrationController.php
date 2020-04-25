@@ -12,7 +12,10 @@ class RegistrationController extends Controller
 {
     public function index(Request $request)
     {
-        return view("registration.index")->with(['data' => $request->all()]);
+        if ($request->get('email') &&  $request->get('kdju1') && $request->get('stpid'))
+            return view("registration.index")->with(['data' => $request->all()]);
+
+        return redirect('/');
     }
 
     public function store(Request $request)

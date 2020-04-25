@@ -1098,7 +1098,7 @@
                             text : data.message,
                         });
                     } else {
-                        window.location = "{!! route('registration.index') !!}/" + form.serialize();
+                        window.location = "{!! route('registration.index') !!}?" + form.serialize();
                     }
                 }
             });
