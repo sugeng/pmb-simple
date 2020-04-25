@@ -60,7 +60,7 @@
             <!-- Logo BEGIN -->
             <div class="col-md-2 col-sm-2">
                 <a class="scroll site-logo" href="#promo-block"><img
-                        src="{!! asset("") !!}assets/onepage/img/logo/red.png" alt="Metronic One Page"></a>
+                        src="{!! asset("assets/onepage/img/logo.png") !!}" alt="Pendaftaran Online UPDM(B)" height="60" style="top: 2px;position: fixed;left: 30px;"></a>
             </div>
             <!-- Logo END -->
             <a href="javascript:void(0);" class="mobi-toggler"><i class="fa fa-bars"></i></a>
@@ -70,9 +70,11 @@
                     <li class="current"><a href="#promo-block">Halaman Utama</a></li>
                     <li><a href="#gelombang">Gelombang</a></li>
                     <li><a href="#program-studi">Program Studi</a></li>
-                    <li><a href="#ujian">Ujian</a></li>
+                    <li><a href="#biaya-kuliah">Biaya Kuliah</a></li>
                     <li><a href="#persyaratan">Persyaratan</a></li>
-                    <li><a href="#formulir">Biaya Formulir</a></li>
+                    <li><a href="#ujian">Ujian</a></li>
+                    <li><a href="#formulir">Registrasi Online</a></li>
+                    <li><a href="#partner">Partner Kami</a></li>
                 </ul>
             </div>
             <!-- Navigation END -->
@@ -81,7 +83,6 @@
 </div>
 <!-- Header END -->
 
-<!-- Promo block BEGIN -->
 <div class="promo-block" id="promo-block">
     <div id="carousel-example-generic" class="carousel slide carousel-slider" style="margin-top: 60px;">
         <!-- Indicators -->
@@ -117,9 +118,7 @@
         </div>
     </div>
 </div>
-<!-- Promo block END -->
 
-<!-- About block BEGIN -->
 <div class="about-block content content-center" id="gelombang">
     <div class="container">
         <h2>Pendaftaran Mahasiswa Baru <strong>Kampus Merah Putih</strong></h2>
@@ -158,7 +157,102 @@
 
     </div>
 </div>
-<!-- About block END -->
+
+<div class="team-block content content-center margin-bottom-40" id="program-studi">
+    <div class="container">
+        <h2>Program Studi <strong>Kampus Merah Putih</strong></h2>
+        <h4>Anda dapat segera mendaftarkan diri menjadi mahasiswa pada program studi pilihan.</h4>
+
+        <div class="row">
+            <div class="col-md-4 item">
+                <a href="http://fkg.moestopo.ac.id" target="_blank">
+                    <img src="assets/onepage/img/program-study/kedokteran-gigi.jpg" alt="" class="img-responsive">
+                </a>
+                <h3>Kedokteran Gigi</h3>
+                <em>Jenjang S1</em>
+            </div>
+            <div class="col-md-4 item">
+                <a href="http://fikom.moestopo.ac.id" target="_blank">
+                    <img src="assets/onepage/img/program-study/ilmu-komunikasi.jpg" alt="" class="img-responsive">
+                </a>
+                <h3>Ilmu Komunikasi</h3>
+                <em>Jenjang S1</em>
+            </div>
+            <div class="col-md-4 item">
+                <a href="http://feb.moestopo.ac.id" target="_blank">
+                    <img src="assets/onepage/img/program-study/ilmu-manajemen.jpg" alt="" class="img-responsive">
+                </a>
+                <h3>Manajemen</h3>
+                <em>Jenjang S1</em>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 item">
+                <a href="http://feb.moestopo.ac.id" target="_blank">
+                    <img src="assets/onepage/img/program-study/ilmu-akuntansi.jpg" alt="" class="img-responsive">
+                </a>
+                <h3>Akuntansi</h3>
+                <em>Jenjang S1</em>
+            </div>
+            <div class="col-md-4 item">
+                <a href="http://fisip.moestopo.ac.id" target="_blank">
+                    <img src="assets/onepage/img/program-study/ilmu-administrasi-negara.jpg" alt=""
+                         class="img-responsive">
+                </a>
+                <h3>Ilmu Administrasi Publik</h3>
+                <em>Jenjang S1</em>
+            </div>
+            <div class="col-md-4 item">
+                <a href="http://fisip.moestopo.ac.id" target="_blank">
+                    <img src="assets/onepage/img/program-study/hubungan-international.jpg" alt=""
+                         class="img-responsive">
+                </a>
+                <h3>Ilmu Hubungan Internasional</h3>
+                <em>Jenjang S1</em>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 item">
+                <a href="http://teknik.moestopo.ac.id" target="_blank">
+                    <img src="assets/onepage/img/program-study/teknik-industri.jpg" alt="" class="img-responsive">
+                </a>
+                <h3>Teknik Industri</h3>
+                <em>Jenjang S1</em>
+            </div>
+            <div class="col-md-4 item">
+                <a href="http://teknik.moestopo.ac.id" target="_blank">
+                    <img src="assets/onepage/img/program-study/teknik-pertambangan.jpg" alt="" class="img-responsive">
+                </a>
+                <h3>Teknik Pertambangan</h3>
+                <em>Jenjang S1</em>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 item">
+                <a href="http://pps.moestopo.ac.id" target="_blank">
+                    <img src="assets/onepage/img/program-study/magister-manajemen.jpg" alt="" class="img-responsive">
+                </a>
+                <h3>Magister Manajemen</h3>
+                <em>Jenjang S2</em>
+            </div>
+            <div class="col-md-4 item">
+                <a href="http://pps.moestopo.ac.id" target="_blank">
+                    <img src="assets/onepage/img/program-study/magister-ilmu-komunikasi.jpg" alt=""
+                         class="img-responsive">
+                </a>
+                <h3>Magister Ilmu Komunikasi</h3>
+                <em>Jenjang S2</em>
+            </div>
+            <div class="col-md-4 item">
+                <a href="http://pps.moestopo.ac.id" target="_blank">
+                    <img src="assets/onepage/img/program-study/magister-administrasi.jpg" alt="" class="img-responsive">
+                </a>
+                <h3>Magister Ilmu Administrasi</h3>
+                <em>Jenjang S2</em>
+            </div>
+        </div>
+    </div>
+</div>
 
 <div class="about-block content content-center" id="biaya-kuliah">
     <div class="container">
@@ -341,7 +435,70 @@
     </div>
 </div>
 
-<!-- Services block BEGIN -->
+<div class="choose-us-block content text-center margin-bottom-40" id="persyaratan">
+    <div class="container">
+        <h2>Syarat Pendaftaran <strong>Ujian Saringan Masuk (USM)</strong></h2>
+        <h4>Untuk mengikuti USM Universitas Prof. Dr. Moestopo (Beragama) harap memenuhi persyaratan-persyaratan berikut
+            :</h4>
+        <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-12 text-left">
+                <img src="{!! asset("assets/onepage/img/choose-us-2.png") !!}" alt="Persyaratan" class="img-responsive">
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12 text-left">
+                <div class="panel-group" id="accordion1">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h5 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1"
+                                   href="#accordion1_1">Melunasi Pembayaran Formulir Pendaftaran.</a>
+                            </h5>
+                        </div>
+                        <div id="accordion1_1" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                                <p>Calon peserta USM harap melunasi pembayaran Formulir pendaftaran sesuai dengan
+                                   pilihan program studi.
+                                   Bagi peserta yang mendaftar melalui pendaftaran online dapat melunasinya dengan
+                                   membayar melalui Bank BNI berdasarkan No. SPC.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h5 class="panel-title">
+                                <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1"
+                                   href="#accordion1_2">Melengkapi pengisian data-data peserta USM</a>
+                            </h5>
+                        </div>
+                        <div id="accordion1_2" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>Peserta harus melengkapi data-data melalui Anjungan Peserta Ujian untuk dapat
+                                   mencetak Kartu Ujian Saringan Masuk</p>
+                                <p>Kelengkapan data yang dimasukkan harus dilengkapi agar peserta dapat mencetak Kartu
+                                   Ujian sebagai bukti yang akan dibawa pada saat ujian dilaksanakan.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h5 class="panel-title">
+                                <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1"
+                                   href="#accordion1_3">Menyiapkan Foto ukuran 4x6</a>
+                            </h5>
+                        </div>
+                        <div id="accordion1_3" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p></p>
+                                <p>Peserta diharapkan menyediakan foto dengan ukuran 4x6cm sebanyak 2 buah yang akan
+                                   digunakan untuk identifikasi pada saat ujian dilaksanakan.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="services-block content content-center" id="ujian">
     <div class="container">
         <h2>Pendaftaran <strong>Online</strong> Universitas Prof. Dr. Moestopo (Beragama)</h2>
@@ -367,116 +524,15 @@
         </div>
     </div>
 </div>
-<!-- Services block END -->
 
-<!-- Message block BEGIN -->
 <div class="message-block content content-center valign-center" id="message-block">
     <div class="valign-center-elem">
         <h2>The details are not the details <strong>They make the design</strong></h2>
         <em>KEEN THEMES</em>
     </div>
 </div>
-<!-- Message block END -->
 
-<!-- Team block BEGIN -->
-<div class="team-block content content-center margin-bottom-40" id="program-studi">
-    <div class="container">
-        <h2>Program Studi <strong>Kampus Merah Putih</strong></h2>
-        <h4>Anda dapat segera mendaftarkan diri menjadi mahasiswa pada program studi pilihan.</h4>
-
-        <div class="row">
-            <div class="col-md-4 item">
-                <a href="http://fkg.moestopo.ac.id" target="_blank">
-                    <img src="assets/onepage/img/program-study/kedokteran-gigi.jpg" alt="" class="img-responsive">
-                </a>
-                <h3>Kedokteran Gigi</h3>
-                <em>Jenjang S1</em>
-            </div>
-            <div class="col-md-4 item">
-                <a href="http://fikom.moestopo.ac.id" target="_blank">
-                    <img src="assets/onepage/img/program-study/ilmu-komunikasi.jpg" alt="" class="img-responsive">
-                </a>
-                <h3>Ilmu Komunikasi</h3>
-                <em>Jenjang S1</em>
-            </div>
-            <div class="col-md-4 item">
-                <a href="http://feb.moestopo.ac.id" target="_blank">
-                    <img src="assets/onepage/img/program-study/ilmu-manajemen.jpg" alt="" class="img-responsive">
-                </a>
-                <h3>Manajemen</h3>
-                <em>Jenjang S1</em>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4 item">
-                <a href="http://feb.moestopo.ac.id" target="_blank">
-                    <img src="assets/onepage/img/program-study/ilmu-akuntansi.jpg" alt="" class="img-responsive">
-                </a>
-                <h3>Akuntansi</h3>
-                <em>Jenjang S1</em>
-            </div>
-            <div class="col-md-4 item">
-                <a href="http://fisip.moestopo.ac.id" target="_blank">
-                    <img src="assets/onepage/img/program-study/ilmu-administrasi-negara.jpg" alt=""
-                         class="img-responsive">
-                </a>
-                <h3>Ilmu Administrasi Publik</h3>
-                <em>Jenjang S1</em>
-            </div>
-            <div class="col-md-4 item">
-                <a href="http://fisip.moestopo.ac.id" target="_blank">
-                    <img src="assets/onepage/img/program-study/hubungan-international.jpg" alt=""
-                         class="img-responsive">
-                </a>
-                <h3>Ilmu Hubungan Internasional</h3>
-                <em>Jenjang S1</em>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4 item">
-                <a href="http://teknik.moestopo.ac.id" target="_blank">
-                    <img src="assets/onepage/img/program-study/teknik-industri.jpg" alt="" class="img-responsive">
-                </a>
-                <h3>Teknik Industri</h3>
-                <em>Jenjang S1</em>
-            </div>
-            <div class="col-md-4 item">
-                <a href="http://teknik.moestopo.ac.id" target="_blank">
-                    <img src="assets/onepage/img/program-study/teknik-pertambangan.jpg" alt="" class="img-responsive">
-                </a>
-                <h3>Teknik Pertambangan</h3>
-                <em>Jenjang S1</em>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4 item">
-                <a href="http://pps.moestopo.ac.id" target="_blank">
-                    <img src="assets/onepage/img/program-study/magister-manajemen.jpg" alt="" class="img-responsive">
-                </a>
-                <h3>Magister Manajemen</h3>
-                <em>Jenjang S2</em>
-            </div>
-            <div class="col-md-4 item">
-                <a href="http://pps.moestopo.ac.id" target="_blank">
-                    <img src="assets/onepage/img/program-study/magister-ilmu-komunikasi.jpg" alt=""
-                         class="img-responsive">
-                </a>
-                <h3>Magister Ilmu Komunikasi</h3>
-                <em>Jenjang S2</em>
-            </div>
-            <div class="col-md-4 item">
-                <a href="http://pps.moestopo.ac.id" target="_blank">
-                    <img src="assets/onepage/img/program-study/magister-administrasi.jpg" alt="" class="img-responsive">
-                </a>
-                <h3>Magister Ilmu Administrasi</h3>
-                <em>Jenjang S2</em>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Team block END -->
-
-<div class="prices-block content content-center" id="biaya">
+<div class="prices-block content content-center" id="formulir">
     <div class="container">
         <h2 class="margin-bottom-50"><strong>Biaya</strong> Pendaftaran USM</h2>
         <div class="row">
@@ -574,98 +630,18 @@
     </div>
 </div>
 
-<!-- Choose us block BEGIN -->
-<div class="choose-us-block content text-center margin-bottom-40" id="persyaratan">
+<div class="partners-block" id="partner">
     <div class="container">
-        <h2>Syarat Pendaftaran <strong>Ujian Saringan Masuk (USM)</strong></h2>
-        <h4>Untuk mengikuti USM Universitas Prof. Dr. Moestopo (Beragama) harap memenuhi persyaratan-persyaratan berikut
-            :</h4>
         <div class="row">
-            <div class="col-md-6 col-sm-6 col-xs-12 text-left">
-                <img src="{!! asset("assets/onepage/img/choose-us-2.png") !!}" alt="Persyaratan" class="img-responsive">
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <img src="{!! asset("") !!}assets/onepage/img/google-education.png" height="100" alt="Google Education">
             </div>
-            <div class="col-md-6 col-sm-6 col-xs-12 text-left">
-                <div class="panel-group" id="accordion1">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h5 class="panel-title">
-                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1"
-                                   href="#accordion1_1">Melunasi Pembayaran Formulir Pendaftaran.</a>
-                            </h5>
-                        </div>
-                        <div id="accordion1_1" class="panel-collapse collapse in">
-                            <div class="panel-body">
-                                <p>Calon peserta USM harap melunasi pembayaran Formulir pendaftaran sesuai dengan
-                                   pilihan program studi.
-                                   Bagi peserta yang mendaftar melalui pendaftaran online dapat melunasinya dengan
-                                   membayar melalui Bank BNI berdasarkan No. SPC.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h5 class="panel-title">
-                                <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1"
-                                   href="#accordion1_2">Melengkapi pengisian data-data peserta USM</a>
-                            </h5>
-                        </div>
-                        <div id="accordion1_2" class="panel-collapse collapse">
-                            <div class="panel-body">
-                                <p>Peserta harus melengkapi data-data melalui Anjungan Peserta Ujian untuk dapat
-                                   mencetak Kartu Ujian Saringan Masuk</p>
-                                <p>Kelengkapan data yang dimasukkan harus dilengkapi agar peserta dapat mencetak Kartu
-                                   Ujian sebagai bukti yang akan dibawa pada saat ujian dilaksanakan.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h5 class="panel-title">
-                                <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1"
-                                   href="#accordion1_3">Menyiapkan Foto ukuran 4x6</a>
-                            </h5>
-                        </div>
-                        <div id="accordion1_3" class="panel-collapse collapse">
-                            <div class="panel-body">
-                                <p></p>
-                                <p>Peserta diharapkan menyediakan foto dengan ukuran 4x6cm sebanyak 2 buah yang akan
-                                   digunakan untuk identifikasi pada saat ujian dilaksanakan.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <img src="{!! asset("") !!}assets/onepage/img/microsoft-education.png" height="80" alt="Microsoft Education">
             </div>
         </div>
     </div>
 </div>
-<!-- Choose us block END -->
-
-<!-- Partners block BEGIN -->
-<div class="partners-block">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-2 col-sm-3 col-xs-6">
-                <img src="{!! asset("") !!}assets/onepage/img/partners/cisco.png" alt="cisco">
-            </div>
-            <div class="col-md-2 col-sm-3 col-xs-6">
-                <img src="{!! asset("") !!}assets/onepage/img/partners/walmart.png" alt="walmart">
-            </div>
-            <div class="col-md-2 col-sm-3 col-xs-6">
-                <img src="{!! asset("") !!}assets/onepage/img/partners/gamescast.png" alt="gamescast">
-            </div>
-            <div class="col-md-2 col-sm-3 col-xs-6">
-                <img src="{!! asset("") !!}assets/onepage/img/partners/spinwokrx.png" alt="spinwokrx">
-            </div>
-            <div class="col-md-2 col-sm-3 col-xs-6">
-                <img src="{!! asset("") !!}assets/onepage/img/partners/ngreen.png" alt="ngreen">
-            </div>
-            <div class="col-md-2 col-sm-3 col-xs-6">
-                <img src="{!! asset("") !!}assets/onepage/img/partners/vimeo.png" alt="vimeo">
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Partners block END -->
 
 <!-- BEGIN PRE-FOOTER -->
 <div class="pre-footer">
