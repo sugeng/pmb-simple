@@ -150,7 +150,7 @@
                 @foreach ($exams as $row)
                     <tr>
                         <td>Gelombang {{ $row->kdgel }}</td>
-                        <td>{{ monthName($row->tgtes) }}</td>
+                        <td>{{ monthName($row->tgtes->format("Y-m-d")) }}</td>
                         <td>{!! jurusan($row->kdjur) !!}  </td>
                     </tr>
                 @endforeach
