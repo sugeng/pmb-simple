@@ -1,6 +1,4 @@
-<?php
-
-namespace App\Libraries\Listeners;
+<?php namespace App\Libraries\Listeners;
 
 use App\Libraries\Events\Registered;
 use App\Libraries\Models\Registrant;

@@ -41,7 +41,7 @@
     <link href="{!! asset("assets/onepage/css/themes/red.css") !!}" rel="stylesheet" id="style-color">
     <link href="{!! asset("assets/onepage/css/custom.css") !!}" rel="stylesheet">
                                                          <!-- Theme styles END -->
-    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@8.19.0/dist/sweetalert2.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-bootstrap-4@3.1.4/bootstrap-4.min.css"
 </head>
 <!--DOC: menu-always-on-top class to the body element to set menu on top -->
 <body class="menu-always-on-top">
@@ -62,7 +62,7 @@
             <div class="col-md-10 pull-right">
                 <ul class="header-navigation">
                     <li class="current"><a href="#promo-block">Halaman Utama</a></li>
-                    <li><a href="#gelombang">Gelombang</a></li>
+                    <li><a href="#gelombang">Jadwal CBT Online</a></li>
                     <li><a href="#program-studi">Program Studi</a></li>
                     <li><a href="#biaya-kuliah">Biaya Kuliah</a></li>
                     <li><a href="#persyaratan">Syarat dan Kondisi</a></li>
@@ -127,7 +127,7 @@
             Ujian Saringan Masuk (USM) dilakukan via online seperti yang tertera pada tabel jadwal dibawah ini melalui link <a href="https://pmb-cbt.moestopo.ac.id">CBT UPDM(B)</a>
         </h4>
         <h4>
-            Bagi Anda yang memiliki <strong>raport</strong> sesuai persyaratan kami, akan dinyatakan <strong>bebas Tes Ujian Saringan Masuk VBT Online</strong>
+            Bagi Anda yang memiliki <strong>raport</strong> sesuai persyaratan kami, akan dinyatakan <strong>bebas Tes Ujian Saringan Masuk CBT Online</strong>
         </h4>
         <h4>
             Bagi Anda khususnya peminat <strong>Fakultas Kedokteran Gigi</strong>, selain Ujian Saringan Masuk CBT Online, diwajibkan melakukan <strong>Test Wawancara dan Kesehatan Mandiri</strong> sesuai rujukan kami. Kedua hasil tersebut wajib dikirim ke email kami di:  <strong><a href="mailto:pmb@moestopo.ac.id" target="_top">pmb.moestopo.ac.id</a></strong> atau melalui whatsapp <a href="https://bit.ly/pmbsesya"><i class="fa fa-whatsapp" aria-hidden="true"></i> 081315978785</a> atau <a href="https://bit.ly/pmbsukarta"><i class="fa fa-whatsapp" aria-hidden="true"></i> 081315978785</a>
@@ -539,13 +539,6 @@
                 <p>TES POTENSI AKADEMIK</p>
             </div>
         </div>
-    </div>
-</div>
-
-<div class="message-block content content-center valign-center" id="message-block">
-    <div class="valign-center-elem">
-        <h2>The details are not the details <strong>They make the design</strong></h2>
-        <em>KEEN THEMES</em>
     </div>
 </div>
 
@@ -1084,7 +1077,7 @@
 <script src="{!! asset("assets/onepage/scripts/layout.js") !!}" type="text/javascript"></script>
 <script src="{!! asset("assets/pages/scripts/bs-carousel.js") !!}" type="text/javascript"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8.19.0/dist/sweetalert2.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@9/dist/sweetalert2.min.js"></script>
 <script>
     jQuery(document).ready(function () {
         Layout.init();

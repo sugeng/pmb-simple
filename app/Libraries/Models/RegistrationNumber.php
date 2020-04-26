@@ -8,6 +8,8 @@ class RegistrationNumber extends \Illuminate\Database\Eloquent\Model
 {
     protected $table = "tbnva";
 
+    public $timestamps = false;
+
     public static function registrationNumber($registration_year, $departement_kode)
     {
         $number = static::where('tahun', $registration_year)

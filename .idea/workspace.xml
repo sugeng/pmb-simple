@@ -196,26 +196,30 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="378" y="173" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1587641508997">
+    <state x="448" y="170" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1587867317592">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="378" y="173" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.1280.777@0.23.1280.777" timestamp="1587641508997" />
+    <state x="448" y="170" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1280.777@0.23.1280.777" timestamp="1587867317592" />
+    <state x="378" y="173" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1587867387576">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="378" y="173" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.1280.777@0.23.1280.777" timestamp="1587867387576" />
     <state x="430" y="177" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0" timestamp="1587642655535">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="430" y="177" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0/0.23.1280.777@0.23.1280.777" timestamp="1587642655535" />
-    <state x="335" y="128" key="NewPhpClassDialog" timestamp="1587701546383">
+    <state x="335" y="128" key="NewPhpClassDialog" timestamp="1587867302176">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="335" y="128" key="NewPhpClassDialog/0.23.1280.777@0.23.1280.777" timestamp="1587701546383" />
+    <state x="335" y="128" key="NewPhpClassDialog/0.23.1280.777@0.23.1280.777" timestamp="1587867302176" />
     <state x="452" y="338" key="NewPhpFileDialog" timestamp="1587777474975">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="452" y="338" key="NewPhpFileDialog/0.23.1280.777@0.23.1280.777" timestamp="1587777474975" />
-    <state width="500" height="445" key="SwitcherDM" timestamp="1587864649684">
+    <state width="500" height="445" key="SwitcherDM" timestamp="1587869564918">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="500" height="445" key="SwitcherDM/0.23.1280.777@0.23.1280.777" timestamp="1587864649684" />
+    <state width="500" height="445" key="SwitcherDM/0.23.1280.777@0.23.1280.777" timestamp="1587869564918" />
     <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1587799790983">
       <screen x="0" y="23" width="1280" height="777" />
     </state>

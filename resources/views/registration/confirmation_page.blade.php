@@ -65,19 +65,16 @@
                             <i class="fa fa-tags"></i> Terdaftar pada tahun : <strong></strong>
                         </li>
                         <li>
-                            <i class="fa fa-asterisk"></i> Nama : <strong></strong>
+                            <i class="fa fa-shopping-cart"></i> Terdaftar untuk Program Studi : <strong>{!! $registrant->departement->nmjur !!}</strong>
                         </li>
                         <li>
-                            <i class="fa fa-heart"></i> Nomor Registrasi : <strong></strong>
+                            <i class="fa fa-asterisk"></i> Nama : <strong>{!! $registrant->nmmhs !!}</strong>
                         </li>
                         <li>
-                            <i class="fa fa-star"></i> No. Student Payment Center (SPC) : <strong></strong>
+                            <i class="fa fa-heart"></i> Nomor Registrasi : <strong> {!! $registrant->noreg !!}</strong>
                         </li>
                         <li>
-                            <i class="fa fa-shopping-cart"></i> Program Studi : <strong></strong>
-                        </li>
-                        <li>
-                            <i class="fa fa-shopping-cart"></i> Biaya Registrasi : <strong></strong>
+                            <i class="fa fa-star"></i> Password CBT Online : <strong>{!! $registrant->nospc !!}</strong>
                         </li>
                     </ul>
                 </div>

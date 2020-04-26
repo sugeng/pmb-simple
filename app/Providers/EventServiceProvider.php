@@ -12,7 +12,8 @@ class EventServiceProvider extends ServiceProvider
      */
     protected $listen = [
         \App\Libraries\Events\Registered::class => [
-            \App\Libraries\Listeners\SendEmailNotification::class
+            \App\Libraries\Listeners\SendEmailNotification::class,
+            \App\Libraries\Listeners\DeactiveRegistrationNumber::class
         ]
     ];
 

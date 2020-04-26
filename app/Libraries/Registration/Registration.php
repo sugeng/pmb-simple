@@ -40,6 +40,8 @@ class Registration
         $this->uploadAvatar();
 
         event(new Registered($this->registration_data['registration_number']));
+
+        return $this->registrant->with('departement')->where($this->registration_data['registration_number'])->first();
     }
 
     private function getRegistrationNumber()
@@ -79,8 +81,8 @@ class Registration
         $this->registrant->create([
             "noreg" => $this->registration_data['registration_number'],
             "thusm" => $this->registration_data['registration_period'],
-            "nmmhs" => $this->registration_data['name'],
-            "tplhr" => $this->registration_data['birth_place'],
+            "nmmhs" => strtoupper($this->registration_data['name']),
+            "tplhr" => strtoupper($this->registration_data['birth_place']),
             "tglhr" => $this->registration_data['birthday'],
             "email" => strtolower($this->registration_data['email']),
             "hpper" => $this->registration_data['mobile_phone'],
@@ -88,7 +90,7 @@ class Registration
             "nospc" => $this->registration_data['spc_number'],
             "kdju1" => $this->registration_data['departement_code'],
             "nisnn" => $this->registration_data['nisn'],
-            "nmsma" => $this->registration_data['school_name'],
+            "kdsma" => $this->registration_data['school_name'],
             "prsma" => $this->registration_data['school_province'],
             "kbsma" => $this->registration_data['school_regency'],
             "stpid" => $this->registration_data['registration_status'],

@@ -42,12 +42,12 @@ class RegistrationController extends Controller
 //            'school_name'  => 'required',
 //        ]);
 
-        (new \App\Libraries\Registration\Registration(
+        $registrant = (new \App\Libraries\Registration\Registration(
             new \App\Libraries\Models\Registrant(),
             $request->all()
         ))->store();
 
-        return view("registration.confirmation_page");
+        return view("registration.confirmation_page")->with(["registrant" => $registrant]);
     }
 
     public function registered(Request $request, Registrant $registrant)

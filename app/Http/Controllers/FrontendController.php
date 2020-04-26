@@ -12,7 +12,10 @@ class FrontendController extends Controller
     public function index(RegistrationPeriod $period, Exam $exam)
     {
         $registration_period = $period::periodActive();
-        $exams = $exam->where("thusm", $registration_period->thusm)->orderBy('kdgel')->get();
+
+        $sekarang = date("Y-m-d");
+
+        $exams = $exam->where("thusm", $registration_period->thusm)->where('tgtes', ">=", $sekarang)->orderBy('kdgel')->get();
 
         return view("frontend.layouts.app")->with(
           [

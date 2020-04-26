@@ -8,6 +8,8 @@ class SpcNumber extends \Illuminate\Database\Eloquent\Model
 {
     protected $table = "tbspc";
 
+    public $timestamps = false;
+
     public static function spcNumber($registration_year, $departement_code)
     {
         $result = static::where("tahun", $registration_year)

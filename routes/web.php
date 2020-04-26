@@ -17,7 +17,11 @@ Route::get('/', "FrontendController@index");
 Route::get("registration", "RegistrationController@index")->name("registration.index");
 Route::post("registration", "RegistrationController@store")->name("registration.store");
 
-Route::get("test", function () {
-    return view("registration.confirmation_page");
+Route::get("test", function (\App\Libraries\Models\Registrant $registrant) {
+    $data = $registrant->where('noreg', '20300028')->first();
+    $r = $data->load("departement");
+
+    return $r;
+    //return view("registration.confirmation_page");
     //return \App\Libraries\Models\RegistrationNumber::registrationNumber('2020', '4');
 });

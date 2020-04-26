@@ -185,10 +185,10 @@ class Registrant extends Model
      */
     protected $fillable = ['useid', 'tgent', 'tgtup', 'nimhs', 'nonik', 'nmmhs', 'kdbyk', 'tplhr', 'tglhr', 'kdkel', 'kdagm', 'kdtus', 'kdkwn', 'kdsuk', 'kdneg', 'kddrh', 'stwan', 'stkes', 'email', 'hpage', 'alper', 'rtper', 'rwper', 'prper', 'kbper', 'klper', 'kcper', 'kpper', 'tlper', 'alsur', 'rtsur', 'rwsur', 'prsur', 'kbsur', 'klsur', 'kcsur', 'kpsur', 'tlsur', 'stpho', 'stala', 'stija', 'stnem', 'sdlls', 'kdsma', 'kjsma', 'nmsma', 'nisn', 'alsma', 'prsma', 'kbsma', 'kpsma', 'nesma', 'tlsma', 'jrsma', 'ijsma', 'nmpti', 'alpti', 'prpti', 'kbpti', 'tlpti', 'jrpti', 'nimti', 'nmaya', 'agaya', 'pkaya', 'pdaya', 'staya', 'nmibu', 'agibu', 'pkibu', 'pdibu', 'stibu', 'alort', 'rtort', 'rwort', 'prort', 'kbort', 'klort', 'kcort', 'kport', 'tlort', 'nmins', 'alins', 'prins', 'kbins', 'klins', 'kcins', 'kpins', 'tlins', 'fxins', 'emins', 'hpins', 'thusm', 'thsms', 'kdgel', 'norol', 'nospc', 'tgspc', 'stpid', 'noreg', 'kdreg', 'kdtry', 'nokwi', 'kdju1', 'kdju2', 'kdju3', 'kdjur', 'notes', 'kdru1', 'kdru2', 'kdru3', 'kdru4', 'kdru5', 'shift', 'kdwil', 'stakl', 'regak', 'nlusm', 'ranki', 'grusm', 'sttes', 'sttmp', 'kdjfu', 'nmbuy', 'jaket', 'rekom', 'bbtes', 'tgbyr', 'nmbnk', 'nlbyr', 'nobnk', 'norec', 'anbnk', 'stbyr', 'nmsel', 'kdage', 'tgtes', 'quizz', 'ipbuy', 'stsur', 'stort', 'stsma', 'noreg_old', 'hpper', 'jnsma', 'phaya', 'phibu'];
 
-    public function registration()
+    public function departement()
     {
-        return $this->create([
-
-        ]);
+        return $this->belongsTo(Departement::class, 'kdju1', 'kdjur');
     }
+
+
 }
