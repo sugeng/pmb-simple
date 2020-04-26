@@ -20,3 +20,7 @@
     right: 1px;
     width: 30px;
 }
+
+.header-navigation {
+    font: 17px "PT Sans Narrow", Arial, sans-serif;
+}

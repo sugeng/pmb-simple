@@ -104,7 +104,7 @@
                             </h2>
                             <div class="animated flipInX">
                                 <div class="hidden-xs">
-                                    <i class="promo-like fa fa-thumbs-up"></i>
+                                    <a href="https://bit.ly/pmbsukarta" target="_blank"><i class="promo-like fa fa-whatsapp"></i></a>
                                     <div class="promo-like-text">
                                         <h2>Gratis Biaya Pendaftaran Mahasiswa Baru.</h2>
                                         <p>Ujian Saringan Masuk (USM) via <a href="https://pmb-cbt.moestopo.ac.id/"
@@ -137,7 +137,7 @@
             Bagi Anda yang memiliki <strong>raport</strong> sesuai persyaratan kami, akan dinyatakan <strong>bebas Tes Ujian Saringan Masuk VBT Online</strong>
         </h4>
         <h4>
-            Bagi Anda khususnya peminat <strong>Fakultas Kedokteran Gigi</strong>, selain Ujian Saringan Masuk CBT Online, diwajibkan melakukan <strong>Test Wawancara dan Kesehatan Mandiri</strong> sesuai rujukan kami. Kedua hasil tersebut wajib dikirim ke email <strong>pmb.moestopo.ac.id</strong> atau via WA ke nomor <strong>+62 9999999</strong>
+            Bagi Anda khususnya peminat <strong>Fakultas Kedokteran Gigi</strong>, selain Ujian Saringan Masuk CBT Online, diwajibkan melakukan <strong>Test Wawancara dan Kesehatan Mandiri</strong> sesuai rujukan kami. Kedua hasil tersebut wajib dikirim ke email kami di:  <strong><a href="mailto:pmb@moestopo.ac.id" target="_top">pmb.moestopo.ac.id</a></strong> atau melalui whatsapp <a href="https://bit.ly/pmbsesya"><i class="fa fa-whatsapp" aria-hidden="true"></i> 081315978785</a> atau <a href="https://bit.ly/pmbsukarta"><i class="fa fa-whatsapp" aria-hidden="true"></i> 081315978785</a>
         </h4>
 
         <table class="table">
