@@ -99,7 +99,7 @@
 
                             <div class="form-group">
                                 <label for="email">Alamat Email</label>
-                                <input type="email" name="email" id="email" value="{{ $data['email'] }}" class="form-control required"
+                                <input type="email" name="email" id="email" disabled="disabled" value="{{ $data['email'] }}" class="form-control disabled required"
                                        onchange="getVals(this, 'email_field');">
                             </div>
 
@@ -143,7 +143,6 @@
                                        onchange="getVals(this, 'nisn');">
                             </div>
 
-                            <label>Propinsi</label>
                             <div class="form-group">
                                 <label for="province">Propinsi</label>
                                 <select id="province" name="school_province" class="form-control required"
@@ -202,8 +201,9 @@
                             <div class="summary">
                                 <div class="wrapper">
                                     <h3>Terima kasih atas waktu Anda <br><span id="name_field"></span>!</h3>
-                                    <p>Kami akan segera mengirimkan email notifikasi melalui email Anda di <strong
-                                            id="email_field"></strong></p>
+                                    <p>Kami akan segera mengirimkan email notifikasi melalui email Anda di <strong>
+                                            {!! $data['email'] !!}
+                                        </strong></p>
                                 </div>
                             </div>
                         </div>
