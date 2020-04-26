@@ -284,9 +284,21 @@
 <script>
     $('.datepicker').datepicker({
         startView: 2,
-        format   : 'yyyy-mm-dd'
+        defaultViewDate: {
+            year: 2000,
+            month: 0,
+            day: 1
+        },
+        format   : 'yyyy-mm-dd',
+        autoclose: true
     }).on("changeDate", function (e) {
 
+    });
+
+    document.getElementById('phone').addEventListener('input', function (e) {
+        let x = e.target.value.replace(/\D/g, '').match(/(\d{0,4})(\d{0,4})(\d{0,6})/);
+
+        e.target.value = !x[2] ? x[1] : '(' + x[1] + ') ' + x[2] + (x[3] ? '-' + x[3] : '');
     });
 
     $('#exam_cbt').select2({
