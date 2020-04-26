@@ -17,3 +17,7 @@
     font-size: 3vw;
     margin-top: 25px;
 }
+
+.header .mobi-toggler {
+    position: absolute;
+}
