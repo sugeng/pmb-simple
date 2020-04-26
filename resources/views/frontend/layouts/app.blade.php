@@ -19,14 +19,7 @@
     <meta content="Pendaftaran Online" name="keywords">
     <meta content="BAPSi UPDM(B)" name="author">
 
-    <meta property="og:site_name" content="pmb.moestopo.ac.id">
-    <meta property="og:title" content="Pendaftaran Online Universitas Prof. Dr. Moestopo (Beragama)">
-    <meta property="og:description" content="-CUSTOMER VALUE-">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="-CUSTOMER VALUE-"><!-- link to image for socio -->
-    <meta property="og:url" content="-CUSTOMER VALUE-">
-
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="{!! asset("favicon.ico") !!}">
                                                          <!-- Fonts START -->
     <link
         href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Pathway+Gothic+One|PT+Sans+Narrow:400+700|Source+Sans+Pro:200,300,400,600,700,900&amp;subset=all"
@@ -793,10 +786,12 @@
                         <div class="col-md-6 col-xs-12 col-sm-12">
                             <div class="portlet-body">
                                 {{ Form::open([
-    'route' => "registration.registered",
+    'route' => "registration.index",
     'class' => 'form registration',
+    'data-action' => route("registration.registered"),
     'role' => 'form',
     'method' => 'get']) }}
+                                <input type="hidden" name="kdju1" value="41">
                                 <div class="form-body">
                                     <div class="row">
                                         <div class="col-md-12">
@@ -852,8 +847,9 @@
                         <div class="col-md-6 col-xs-12 col-sm-12">
                             <div class="portlet-body">
                                 {{ Form::open([
-    'route' => "registration.registered",
+    'route' => "registration.index",
     'class' => 'form registration',
+    'data-action' => route("registration.registered"),
     'role' => 'form',
     'method' => 'get']) }}
                                 <input type="hidden" value="11" name="kdju1" />
@@ -912,8 +908,9 @@
                         <div class="col-md-6 col-xs-12 col-sm-12">
                             <div class="portlet-body">
                                 {{ Form::open([
-    'route' => "registration.registered",
+    'route' => "registration.index",
     'class' => 'form registration',
+    'data-action' => route("registration.registered"),
     'role' => 'form',
     'method' => 'get']) }}
                                 <div class="form-body">
@@ -985,8 +982,9 @@
                         <div class="col-md-6 col-xs-12 col-sm-12">
                             <div class="portlet-body">
                                 {{ Form::open([
-    'route' => "registration.registered",
+    'route' => "registration.index",
     'class' => 'form registration',
+    'data-action' => route("registration.registered"),
     'role' => 'form',
     'method' => 'get']) }}
                                 <div class="form-body">

@@ -146,7 +146,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/assets/onepage/img" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -165,11 +165,11 @@
       <recent name="$PROJECT_DIR$/app/Libraries/Models" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/public/assets/onepage/img" />
       <recent name="$PROJECT_DIR$/public/assets/registration" />
       <recent name="$PROJECT_DIR$/public/assets/registration/fine-uploader" />
       <recent name="$PROJECT_DIR$/public/assets/registration/fineuploader" />
-      <recent name="$PROJECT_DIR$/public/global" />
     </key>
   </component>
   <component name="RunManager">
@@ -212,10 +212,10 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="452" y="338" key="NewPhpFileDialog/0.23.1280.777@0.23.1280.777" timestamp="1587777474975" />
-    <state width="500" height="445" key="SwitcherDM" timestamp="1587809136046">
+    <state width="500" height="445" key="SwitcherDM" timestamp="1587864649684">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="500" height="445" key="SwitcherDM/0.23.1280.777@0.23.1280.777" timestamp="1587809136046" />
+    <state width="500" height="445" key="SwitcherDM/0.23.1280.777@0.23.1280.777" timestamp="1587864649684" />
     <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1587799790983">
       <screen x="0" y="23" width="1280" height="777" />
     </state>

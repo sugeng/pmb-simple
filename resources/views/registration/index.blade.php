@@ -10,15 +10,7 @@
     <title>Formulir Pendaftaran Peserta Ujian Mahasiswa Baru | Universitas Prof. Dr. Moestopo (Beragama)</title>
 
     <!-- Favicons-->
-    <link rel="shortcut icon" href="{!! asset("assets/registration/img/favicon.ico") !!}" type="image/x-icon">
-    <link rel="apple-touch-icon" type="image/x-icon"
-          href="{!! asset("assets/registration/img/apple-touch-icon-57x57-precomposed.png") !!}">
-    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72"
-          href="{!! asset("assets/registration/img/apple-touch-icon-72x72-precomposed.png") !!}">
-    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114"
-          href="{!! asset("assets/registration/img/apple-touch-icon-114x114-precomposed.png") !!}">
-    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144"
-          href="{!! asset("assets/registration/img/apple-touch-icon-144x144-precomposed.png") !!}">
+    <link rel="shortcut icon" href="{!! asset("favicon.ico") !!}" type="image/x-icon">
 
     <!-- GOOGLE WEB FONT -->
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600" rel="stylesheet">
@@ -56,10 +48,8 @@
                 <a href="{!! url('/') !!}" id="logo"><img src="{!! asset("http://pmb.moestopo.ac.id/assets/global/img/logo.png") !!}" alt=""
                                                           width="380" height="80"></a>
                 <div>
-                    <h2>Pendaftaran ONLINE UPDM(B) Periode Registrasi 2020</h2>
-                    <p>Anda akan mendaftar untuk Program Studi <strong>KEDOKTERAN GIGI (11)</strong></p>
-
-
+                    <h2>Pendaftaran ONLINE UPDM(B) Periode Registrasi {{ $registration_period->thusm }}</h2>
+                    <p>Anda akan mendaftar untuk Program Studi <strong>{{ $departement->nmjur }} ({{ $departement->kdjur  }})</strong></p>
                     <ul>
                         <li>Pastikan Anda sudah menyiapkan berkas digital raport kelas X, XI dan XII untuk upload.</li>
                     </ul>
@@ -78,8 +68,9 @@
                 <!-- /top-wizard -->
                 <form id="wrapped" method="post" enctype="multipart/form-data">
                     {!! csrf_field() !!}
-                    <input type="hidden" id="registration_period" name="registration_period" value="2020">
-                    <input type="hidden" id="departement_code" name="departement_code" value="41">
+                    <input type="hidden" id="registration_period" name="registration_period" value="{{ $registration_period->thusm }}">
+                    <input type="hidden" id="departement_code" name="departement_code" value="{{ $departement->kdjur }}">
+                    <input type="hidden" id="registration_status" name="registration_status" value="{{ $data['stpid'] }}">
                     <!-- Leave for security protection, read docs for details -->
                     <div id="middle-wizard">
                         <div class="step">
@@ -108,7 +99,7 @@
 
                             <div class="form-group">
                                 <label for="email">Alamat Email</label>
-                                <input type="email" name="email" id="email" class="form-control required"
+                                <input type="email" name="email" id="email" value="{{ $data['email'] }}" class="form-control required"
                                        onchange="getVals(this, 'email_field');">
                             </div>
 

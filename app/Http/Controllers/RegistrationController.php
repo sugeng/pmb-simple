@@ -1,6 +1,8 @@
 <?php namespace App\Http\Controllers;
 
+use App\Libraries\Models\Departement;
 use App\Libraries\Models\Registrant;
+use App\Libraries\Models\RegistrationPeriod;
 use Illuminate\Http\Request;
 
 /**
@@ -13,9 +15,20 @@ class RegistrationController extends Controller
     public function index(Request $request)
     {
         if ($request->get('email') &&  $request->get('kdju1') && $request->get('stpid'))
-            return view("registration.index")->with(['data' => $request->all()]);
+            return view("registration.index")->with(['data' => $request->all()])->with($this->getInitData($request));
 
         return redirect('/');
+    }
+
+    protected function getInitData(Request $request)
+    {
+        $departement = Departement::where("kdjur", $request->get('kdju1'))->first();
+        $registration_period = RegistrationPeriod::periodActive();
+
+        return [
+            'departement' => $departement,
+            'registration_period' => $registration_period
+        ];
     }
 
     public function store(Request $request)
