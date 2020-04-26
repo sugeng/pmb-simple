@@ -41,7 +41,9 @@ class Registration
 
         event(new Registered($this->registration_data['registration_number']));
 
-        return $this->registrant->with('departement')->where($this->registration_data['registration_number'])->first();
+        return $this->registrant->with('departement')
+                                ->where('noreg', $this->registration_data['registration_number'])
+                                ->first();
     }
 
     private function getRegistrationNumber()
