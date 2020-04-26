@@ -96,7 +96,7 @@
                                 Universitas Prof. Dr. Moestopo (Beragama) Peduli <span class="color-red">COVID-19</span>
                             </h2>
                             <div class="animated flipInX">
-                                <div class="hidden-xs">
+                                <div>
                                     <a href="https://bit.ly/pmbsukarta" target="_blank"><i class="promo-like fa fa-whatsapp"></i></a>
                                     <div class="promo-like-text">
                                         <h2>Gratis Biaya Pendaftaran Mahasiswa Baru.</h2>
