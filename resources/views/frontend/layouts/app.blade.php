@@ -66,7 +66,7 @@
                     <li><a href="#program-studi">Program Studi</a></li>
                     <li><a href="#biaya-kuliah">Biaya Kuliah</a></li>
                     <li><a href="#persyaratan">Syarat dan Kondisi</a></li>
-                    <li><a href="#ujian">Ujian</a></li>
+                    <li><a href="#ujian">Kontak</a></li>
                     <li><a href="#formulir">Registrasi Online</a></li>
                     <li><a href="#partner">Partner Kami</a></li>
                 </ul>
@@ -518,13 +518,13 @@
 
 <div class="services-block content content-center" id="ujian">
     <div class="container">
-        <h2>Pendaftaran <strong>Online</strong> Universitas Prof. Dr. Moestopo (Beragama)</h2>
-        <h4>Ujian yang akan diujikan untuk masing-masing Fakultas</h4>
+        <h2>Anda dapat menghubungi Helpdesk kami melalui Whatsapp dibawah ini.</h2>
 
         <div class="row">
-            <div class="col-md-3 col-sm-3 col-xs-12 item"><i class="fa fa-heart"></i>
-                <h3>Fakultas Kedokteran Gigi</h3>
-                <p>BAHASA INGGRIS, BIOLOGI, KIMIA, TES IQ, WAWANCARA, TES KESEHATAN</p>
+            <a hreg="http://bit.ly/wa"
+            <div class="col-md-3 col-sm-3 col-xs-12 item"><i class="fa fa-whatsapp"></i>
+                <h3>Bapak Sukarta</h3>
+                <p></p>
             </div>
             <div class="col-md-3 col-sm-3 col-xs-12 item"><i class="fa fa-group"></i>
                 <h3>Fakultas Ilmu Sosial dan Ilmu Politik, Fakultas Ekonomi Bisnis, Fakultas Ilmu Komunikasi</h3>

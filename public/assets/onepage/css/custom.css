@@ -2,3 +2,13 @@
 .header-navigation {
     font: 16px "PT Sans Narrow", Arial, sans-serif;
 }
+
+.carousel-slider .carousel-title-v1 {
+    font-size: 5vw;
+    font-weight: 600;
+    font-family: "PT Sans Narrow", Arial, sans-serif;
+    line-height: 1.4;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+}
