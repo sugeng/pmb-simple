@@ -726,7 +726,7 @@
                                                     <div class="input-group">
                                                         <span class="input-group-addon"><i
                                                                 class="fa fa-sun-o"></i></span>
-                                                        {{ Form::select('stpid', ["" => "", "B" => "BARU", "P" => "PINDAHAN"], '', ['class' => 'form-control', 'id' => 'status-masuk']) }}
+                                                        {{ Form::select('stpid', ["" => "-- STATUS MASUK --", "B" => "BARU", "P" => "PINDAHAN"], '', ['class' => 'form-control', 'id' => 'status-masuk']) }}
                                                     </div>
                                                 </div>
                                             </div>
@@ -740,7 +740,7 @@
                                                     <div class="input-group">
                                                         <span class="input-group-addon"><i
                                                                 class="fa fa-graduation-cap"></i></span>
-                                                        {{ Form::select('kdju1', ["" => "", "31" => "MANAJEMEN", "32" => "AKUNTANSI"], '', ['class' => 'form-control', 'id' => 'program-studi']) }}
+                                                        {{ Form::select('kdju1', ["" => "-- PROGRAM STUDI --", "31" => "MANAJEMEN", "32" => "AKUNTANSI"], '', ['class' => 'form-control', 'id' => 'program-studi']) }}
                                                     </div>
                                                 </div>
                                             </div>
@@ -801,7 +801,7 @@
                                                     <div class="input-group">
                                                         <span class="input-group-addon"><i
                                                                 class="fa fa-sun-o"></i></span>
-                                                        {{ Form::select('stpid', ["" => "", "B" => "BARU", "P" => "PINDAHAN"], '', ['class' => 'form-control', 'id' => 'status-masuk']) }}
+                                                        {{ Form::select('stpid', ["" => "-- STATUS MASUK --", "B" => "BARU", "P" => "PINDAHAN"], '', ['class' => 'form-control', 'id' => 'status-masuk']) }}
                                                     </div>
                                                 </div>
                                             </div>
@@ -862,7 +862,7 @@
                                                     <div class="input-group">
                                                         <span class="input-group-addon"><i
                                                                 class="fa fa-sun-o"></i></span>
-                                                        {{ Form::select('stpid', ["" => "", "B" => "BARU"], '', ['class' => 'form-control', 'id' => 'status-masuk']) }}
+                                                        {{ Form::select('stpid', ["" => "-- STATUS MASUK --", "B" => "BARU"], '', ['class' => 'form-control', 'id' => 'status-masuk']) }}
                                                     </div>
                                                 </div>
                                             </div>
@@ -922,7 +922,7 @@
                                                     <div class="input-group">
                                                         <span class="input-group-addon"><i
                                                                 class="fa fa-sun-o"></i></span>
-                                                        {{ Form::select('stpid', ["" => "", "B" => "BARU", "P" => "PINDAHAN"], '', ['class' => 'form-control', 'id' => 'status-masuk']) }}
+                                                        {{ Form::select('stpid', ["" => "-- STATUS MASUK --", "B" => "BARU", "P" => "PINDAHAN"], '', ['class' => 'form-control', 'id' => 'status-masuk']) }}
                                                     </div>
                                                 </div>
                                             </div>
@@ -936,7 +936,7 @@
                                                     <div class="input-group">
                                                         <span class="input-group-addon"><i
                                                                 class="fa fa-graduation-cap"></i></span>
-                                                        {{ Form::select('kdju1', ["" => "", "51" => "TEKNIK PERTAMBANGAN", "52" => "TEKNIK INDUSTRI"], '', ['class' => 'form-control', 'id' => 'program-studi']) }}
+                                                        {{ Form::select('kdju1', ["" => "-- PROGRAM STUDI --", "51" => "TEKNIK PERTAMBANGAN", "52" => "TEKNIK INDUSTRI"], '', ['class' => 'form-control', 'id' => 'program-studi']) }}
                                                     </div>
                                                 </div>
                                             </div>
@@ -996,7 +996,7 @@
                                                     <div class="input-group">
                                                         <span class="input-group-addon"><i
                                                                 class="fa fa-sun-o"></i></span>
-                                                        {{ Form::select('stpid', ["" => "", "B" => "BARU", "P" => "PINDAHAN"], '', ['class' => 'form-control', 'id' => 'status-masuk']) }}
+                                                        {{ Form::select('stpid', ["" => "-- STATUS MASUK --", "B" => "BARU", "P" => "PINDAHAN"], '', ['class' => 'form-control', 'id' => 'status-masuk']) }}
                                                     </div>
                                                 </div>
                                             </div>
@@ -1010,7 +1010,7 @@
                                                     <div class="input-group">
                                                         <span class="input-group-addon"><i
                                                                 class="fa fa-graduation-cap"></i></span>
-                                                        {{ Form::select('kdju1', ["" => "", "21" => "ILMU ADMINISTRASI PUBLIK", "22" => "ILMU HUBUNGAN INTERNASIONAL"], '', ['class' => 'form-control', 'id' => 'program-studi']) }}
+                                                        {{ Form::select('kdju1', ["" => "-- PROGRAM STUDI --", "21" => "ILMU ADMINISTRASI PUBLIK", "22" => "ILMU HUBUNGAN INTERNASIONAL"], '', ['class' => 'form-control', 'id' => 'program-studi']) }}
                                                     </div>
                                                 </div>
                                             </div>
