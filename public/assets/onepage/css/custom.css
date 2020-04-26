@@ -12,3 +12,8 @@
     text-align: center;
     text-transform: uppercase;
 }
+
+.carousel-slider .subtitle {
+    font-size: 3vw;
+    margin-top: 5px;
+}
