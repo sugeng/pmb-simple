@@ -118,6 +118,12 @@
                                     <span class="checkmark"></span>
                                 </label>
                             </div>
+                            <label>Pilih Tanggal CBT Online</label>
+                            <div class="form-group">
+                                <label for="exam_cbt">Pilih Tanggal CBT Online</label>
+                                <select id="exam_cbt" name="exam_cbt" class="form-control required"
+                                        style="width: 100%"></select>
+                            </div>
                             <div class="form-group add_bottom_30 add_top_20">
                                 <label>Upload Foto Peserta<br><small>(Files yang diterima: .jpg/.jpeg, .png - Ukuran Max
                                                                      file: 500KB)</small></label>
@@ -281,6 +287,27 @@
         format   : 'yyyy-mm-dd'
     }).on("changeDate", function (e) {
 
+    });
+
+    $('#exam_cbt').select2({
+        placeholder: "Pilih Tanggal CBT Online",
+        allowClear : true,
+        ajax       : {
+            url           : '/api/exam',
+            delay         : 300,
+            data          : function (param) {
+                return {
+                    registration_period: "{!! $registration_period->thusm !!}",
+                    departement_code: "{!! $departement->kdjur !!}",
+                    term: param.term
+                };
+            },
+            processResults: function (data) {
+                return {
+                    results: data.results
+                };
+            }
+        }
     });
 
     $('#province').select2({

@@ -24,6 +24,6 @@ class NotificationForRegistration extends Mailable
      */
     public function build()
     {
-        return $this->view('registration.email.registered')->with(['registrant' => $this->registrant]);
+        return $this->view('registration.email.confirmation')->with(['registrant' => $this->registrant]);
     }
 }

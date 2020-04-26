@@ -524,13 +524,13 @@
             <a href="http://bit.ly/pmbsukarta" target="_blank">
                 <div class="col-md-6 col-sm-6 col-xs-12 item"><i class="fa fa-whatsapp"></i>
                     <h3>Bapak Sukarta</h3>
-                    <h1>6287886014786</h1>
+                    <h1>0878 86014786</h1>
                 </div>
             </a>
-            <a href="http://bit.ly/pmbsesha" target="_blank">
+            <a href="http://bit.ly/pmbsesya" target="_blank">
                 <div class="col-md-6 col-sm-6 col-xs-12 item"><i class="fa fa-whatsapp"></i>
                     <h3>Ibu Shesa</h3>
-                    <h1>081315978785</h1>
+                    <h1>0813 15978785</h1>
                 </div>
             </a>
         </div>

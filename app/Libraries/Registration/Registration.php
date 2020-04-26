@@ -96,6 +96,7 @@ class Registration
             "prsma" => $this->registration_data['school_province'],
             "kbsma" => $this->registration_data['school_regency'],
             "stpid" => $this->registration_data['registration_status'],
+            "tgtes" => $this->registration_data['exam_cbt'],
             "useid" => "ONLINE",
             "tgent" => \DB::raw("NOW()")
         ]);

@@ -26,7 +26,7 @@ class SendEmailNotification
      */
     public function handle(Registered $event)
     {
-        $registrant = (new Registrant())->where('noreg', $event->registration_number)->first();
+        $registrant = (new Registrant())->with('departement')->where('noreg', $event->registration_number)->first();
 
         \Mail::to($registrant->email)->send(new NotificationForRegistration($registrant));
     }

@@ -1,6 +1,7 @@
 <?php namespace App\Http\Controllers;
 
 use App\Libraries\Models\Departement;
+use App\Libraries\Models\Exam;
 use App\Libraries\Models\Registrant;
 use App\Libraries\Models\RegistrationPeriod;
 use Illuminate\Http\Request;
@@ -27,7 +28,7 @@ class RegistrationController extends Controller
 
         return [
             'departement' => $departement,
-            'registration_period' => $registration_period
+            'registration_period' => $registration_period,
         ];
     }
 

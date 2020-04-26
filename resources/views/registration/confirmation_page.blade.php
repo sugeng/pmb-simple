@@ -74,6 +74,9 @@
                             <i class="fa fa-heart"></i> Nomor Registrasi : <strong> {!! $registrant->noreg !!}</strong>
                         </li>
                         <li>
+                            <i class="fa fa-star"></i> Tanggal CBT Online : <strong>{!! $registrant->tgtes->format("d F Y") !!}</strong>
+                        </li>
+                        <li>
                             <i class="fa fa-star"></i> Password CBT Online : <strong>{!! $registrant->nospc !!}</strong>
                         </li>
                     </ul>

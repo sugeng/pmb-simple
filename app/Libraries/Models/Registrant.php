@@ -180,6 +180,10 @@ class Registrant extends Model
      */
     protected $keyType = 'integer';
 
+    protected $dates = [
+        "tglhr", "tgtes"
+    ];
+
     /**
      * @var array
      */
