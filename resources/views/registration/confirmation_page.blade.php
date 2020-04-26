@@ -62,7 +62,7 @@
                     </div>
                     <ul class="pricing-content list-unstyled" style="color: #f7ffec; margin-left: 50px; font-weight: bolder;">
                         <li>
-                            <i class="fa fa-tags"></i> Terdaftar pada tahun : <strong></strong>
+                            <i class="fa fa-tags"></i> Terdaftar pada tahun : <strong>{!! $registrant->thusm !!}</strong>
                         </li>
                         <li>
                             <i class="fa fa-shopping-cart"></i> Terdaftar untuk Program Studi : <strong>{!! $registrant->departement->nmjur !!}</strong>

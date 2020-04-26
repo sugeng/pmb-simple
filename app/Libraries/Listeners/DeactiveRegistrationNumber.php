@@ -28,14 +28,14 @@ class DeactiveRegistrationNumber
     private function deactiveRegistrationNumber($registration_number)
     {
         (new RegistrationNumber())->where("noreg", $registration_number)->update([
-            "aktif" => 1
+            "aktif" => "1"
         ]);
     }
 
     private function deactiveSpcNumber($spc_number)
     {
         (new SpcNumber())->where('nospc', $spc_number)->update([
-            "aktif" => 1
+            "aktif" => "1"
         ]);
     }
 }
