@@ -54,7 +54,7 @@
             <div class="col-md-2 col-sm-2">
                 <a class="scroll site-logo" href="#promo-block"><img
                         src="{!! asset("assets/onepage/img/logo.png") !!}" alt="Pendaftaran Online UPDM(B)" height="60"
-                        style="top: 2px;position: fixed;left: 30px;"></a>
+                        style="top: 2px;position: fixed;left: 30px;" width="250"></a>
             </div>
             <!-- Logo END -->
             <a href="javascript:void(0);" class="mobi-toggler"><i class="fa fa-bars"></i></a>
