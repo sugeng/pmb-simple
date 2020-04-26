@@ -130,7 +130,7 @@
             Bagi Anda yang memiliki <strong>raport</strong> sesuai persyaratan kami, akan dinyatakan <strong>bebas Tes Ujian Saringan Masuk CBT Online</strong>
         </h4>
         <h4>
-            Bagi Anda khususnya peminat <strong>Fakultas Kedokteran Gigi</strong>, selain Ujian Saringan Masuk CBT Online, diwajibkan melakukan <strong>Test Wawancara dan Kesehatan Mandiri</strong> sesuai rujukan kami. Kedua hasil tersebut wajib dikirim ke email kami di:  <strong><a href="mailto:pmb@moestopo.ac.id" target="_top">pmb.moestopo.ac.id</a></strong> atau melalui whatsapp <a href="https://bit.ly/pmbsesya"><i class="fa fa-whatsapp" aria-hidden="true"></i> 081315978785</a> atau <a href="https://bit.ly/pmbsukarta"><i class="fa fa-whatsapp" aria-hidden="true"></i> 081315978785</a>
+            Bagi Anda khususnya peminat <strong>Fakultas Kedokteran Gigi</strong>, selain Ujian Saringan Masuk CBT Online, diwajibkan melakukan <strong>Test Wawancara dan Kesehatan Mandiri</strong> sesuai rujukan kami. Kedua hasil tersebut wajib dikirim ke email kami di:  <strong><a href="mailto:pmb@moestopo.ac.id" target="_top">pmb.moestopo.ac.id</a></strong> atau melalui whatsapp <a href="https://bit.ly/pmbsesya"><i class="fa fa-whatsapp" aria-hidden="true"></i> 081315978785</a> atau <a href="https://bit.ly/pmbsukarta"><i class="fa fa-whatsapp" aria-hidden="true"></i> 6287886014786</a>
         </h4>
 
         <table class="table">
@@ -521,23 +521,18 @@
         <h2>Anda dapat menghubungi Helpdesk kami melalui Whatsapp dibawah ini.</h2>
 
         <div class="row">
-            <a hreg="http://bit.ly/wa"
-            <div class="col-md-3 col-sm-3 col-xs-12 item"><i class="fa fa-whatsapp"></i>
-                <h3>Bapak Sukarta</h3>
-                <p></p>
-            </div>
-            <div class="col-md-3 col-sm-3 col-xs-12 item"><i class="fa fa-group"></i>
-                <h3>Fakultas Ilmu Sosial dan Ilmu Politik, Fakultas Ekonomi Bisnis, Fakultas Ilmu Komunikasi</h3>
-                <p>BAHASA INDONESIA, BAHASA INGGRIS, PENGETAHUAN UMUM, WAWANCARA, KESEHATAN</p>
-            </div>
-            <div class="col-md-3 col-sm-3 col-xs-12 item"><i class="fa fa-gear"></i>
-                <h3>Fakultas Teknik</h3>
-                <p>FISIKA, KIMIA, MATEMATIKA, BAHASA INGGRIS, TPA</p>
-            </div>
-            <div class="col-md-3 col-sm-3 col-xs-12 item"><i class="fa fa-institution"></i>
-                <h3>Program Pasca Sarjana</h3>
-                <p>TES POTENSI AKADEMIK</p>
-            </div>
+            <a href="http://bit.ly/pmbsukarta" target="_blank">
+                <div class="col-md-6 col-sm-6 col-xs-12 item"><i class="fa fa-whatsapp"></i>
+                    <h3>Bapak Sukarta</h3>
+                    <h1>6287886014786</h1>
+                </div>
+            </a>
+            <a href="http://bit.ly/pmbsesha" target="_blank">
+                <div class="col-md-6 col-sm-6 col-xs-12 item"><i class="fa fa-whatsapp"></i>
+                    <h3>Ibu Shesa</h3>
+                    <h1>081315978785</h1>
+                </div>
+            </a>
         </div>
     </div>
 </div>
