@@ -328,7 +328,7 @@
 
         <hr>
 
-        <table class="table">
+        <table class="table table-responsive mobile-font">
             <thead>
             <tr>
                 <th style="text-align: center" colspan="2">Fakultas Ilmu Sosial dan Ilmu Politik</th>
@@ -350,7 +350,7 @@
             </tbody>
         </table>
 
-        <table class="table">
+        <table class="table table-responsive mobile-font">
             <thead>
             <tr>
                 <th style="text-align: center" colspan="2">Fakultas Teknik</th>
@@ -375,7 +375,7 @@
 
         <hr>
 
-        <table class="table">
+        <table class="table table-responsive mobile-font">
             <thead>
             <tr>
                 <th style="text-align: center" colspan="2">Fakultas Ilmu Ekonomi Bisnis</th>
@@ -399,7 +399,7 @@
 
         <hr>
 
-        <table class="table">
+        <table class="table table-responsive mobile-font">
             <thead>
             <tr>
                 <th style="text-align: center" colspan="2">Fakultas Ilmu Komunikasi</th>
@@ -419,7 +419,7 @@
 
         <hr>
 
-        <table class="table">
+        <table class="table table-responsive mobile-font">
             <thead>
             <tr>
                 <th style="text-align: center" colspan="3">Pasca Sarjana</th>
@@ -643,10 +643,10 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-sm-12 col-xs-12">
-                <img src="{!! asset("") !!}assets/onepage/img/google-education.png" height="100" alt="Google Education">
+                <img src="{!! asset("") !!}assets/onepage/img/google-education.png" height="100" alt="Google Education" class="img-fluid img-responsive">
             </div>
             <div class="col-md-6 col-sm-12 col-xs-12">
-                <img src="{!! asset("") !!}assets/onepage/img/microsoft-education.png" height="80"
+                <img src="{!! asset("") !!}assets/onepage/img/microsoft-education.png" height="80" class="img-fluid img-responsive"
                      alt="Microsoft Education">
             </div>
         </div>
