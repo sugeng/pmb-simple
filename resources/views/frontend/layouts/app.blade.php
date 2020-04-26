@@ -419,7 +419,7 @@
 
         <hr>
 
-        <table class="table table-responsive mobile-font">
+        <table class="table table-responsive mobile-font ">
             <thead>
             <tr>
                 <th style="text-align: center" colspan="3">Pasca Sarjana</th>
@@ -1091,7 +1091,7 @@
                     if (data.result === "error") {
                         Swal.fire({
                             icon : 'error',
-                            title: 'Email Sudah Terdaftar',
+                            title: data.title,
                             text : data.message,
                         });
                     } else {

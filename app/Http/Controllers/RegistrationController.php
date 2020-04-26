@@ -52,11 +52,33 @@ class RegistrationController extends Controller
 
     public function registered(Request $request, Registrant $registrant)
     {
+        if ($request->get('kdju1') == "")
+            return response()->json([
+                "result"  => "error",
+                "title"   => "Program Studi Tidak diisi.",
+                "message" => "Anda harus memilih salah satu program studi."
+            ]);
+
+        if ($request->get('stpid') == "")
+            return response()->json([
+                "result"  => "error",
+                "title"   => "Status belum diisi.",
+                "message" => "Anda harus memilih status masuk."
+            ]);
+
+        if ($request->get('email') == "")
+            return response()->json([
+                "result"  => "error",
+                "title"   => "Email belum diisi.",
+                "message" => "Anda harus mengisi email."
+            ]);
+
         $registrant = $registrant->where('email', $request->get('email'))->first();
 
         if ($registrant) {
             return response()->json([
                 "result"  => "error",
+                "title"   => "Email Anda sudah terdaftar",
                 "message" => "Email Anda {$request->get("email")} sudah terdaftar atas nama {$registrant->nmmhs}"
             ]);
         }
