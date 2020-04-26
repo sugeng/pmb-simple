@@ -264,7 +264,7 @@
     <div class="container">
         <h2>Biaya kuliah Program Studi <strong>Kampus Merah Putih</strong></h2>
 
-        <table class="table table-responsive">
+        <table class="table table-responsive mobile-font">
             <thead>
             <tr>
                 <th style="text-align: center" colspan="5">Program Studi Kedokteran Gigi</th>
