@@ -137,11 +137,11 @@
             <thead>
             <tr>
                 <th style="text-align: center" colspan="2">
-                    Tahun Semester Perkuliahan {{ $registration_period->thsms }}</th>
+                    Perkuliahan Semester Ganjil Tahun 2020, direncanakan September 2020
             </tr>
             <tr>
                 <th style="text-align: center">Gelombang</th>
-                <th style="text-align: center">Tanggal Ujian</th>
+                <th style="text-align: center">Jadwal USM CBT Online</th>
                 <th style="text-align: center">Program Studi</th>
             </tr>
             </thead>
@@ -484,6 +484,13 @@
                                 <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1"
                                    href="#accordion1_3">Melengkapi Formulir Pendaftaran.</a>
                             </h5>
+                            <div id="accordion1_3" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>
+                                        Calon Mahasiswa baru harus mengisi dan melengkapi Formulir Pendaftaran Online dengan data yang sebenar-benarnya.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="panel panel-default">
