@@ -45,11 +45,10 @@
     <div class="row row-height">
         <div class="col-xl-4 col-lg-4 content-left">
             <div class="content-left-wrapper">
-                <a href="{!! url('/') !!}" id="logo"><img src="{!! asset("http://pmb.moestopo.ac.id/assets/global/img/logo.png") !!}" alt=""
-                                                          width="380" height="80"></a>
+                <a href="{!! url('/') !!}" id="logo" style="left: unset"><img src="{!! asset("assets/registration/img/logo-updm.png") !!}" alt="Logo UPDM" height="150"></a>
                 <div>
                     <h2>Pendaftaran ONLINE UPDM(B) Periode Registrasi {{ $registration_period->thusm }}</h2>
-                    <p>Anda akan mendaftar untuk Program Studi <strong>{{ $departement->nmjur }} ({{ $departement->kdjur  }})</strong></p>
+                    <p>Anda akan mendaftar untuk Program Studi <strong style="font-weight: bolder">{{ $departement->nmjur }} ({{ $departement->kdjur  }})</strong></p>
                     <ul>
                         <li>Pastikan Anda sudah menyiapkan berkas digital raport kelas X, XI dan XII untuk upload.</li>
                     </ul>
@@ -115,8 +114,8 @@
 
                             <div class="form-group add_top_10">
                                 <label for="nisn">N.I.S.N (Nomor Induk Sekolah Nasional)</label>
-                                <input type="text" name="nisn" id="nisn" class="form-control required"
-                                       onchange="getVals(this, 'nisn');">
+                                <input type="text" name="nisn" id="nisn" class="form-control required" maxlength="10"
+                                       oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
                             </div>
 
                             <div class="form-group">
@@ -131,10 +130,28 @@
                                         style="width: 100%"></select>
                             </div>
 
-                            <div class="form-group add_top_10">
+                            <div class="form-group add_top_10" id="school_old">
                                 <label for="school_name">Nama Sekolah</label>
                                 <select id="school_name" name="school_name" class="form-control required"
                                         style="width: 100%"></select>
+                                <span style="font-size: 10px; text-decoration: underline">
+                                    <a href="#" class="show-school">Nama Sekolah tidak ditemukan.</a>
+                                </span>
+                            </div>
+
+                            <div id="school_new" style="display: none">
+                                <div class="form-group">
+                                    <label for="school_name_new">Nama Sekolah</label>
+                                    <input type="text" name="school_name_new" id="school_name_new" class="form-control">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="school_address">Alamat Sekolah</label>
+                                    <input type="text" name="school_address" id="school_address" class="form-control">
+                                    <span style="font-size: 10px; text-decoration: underline">
+                                    <a href="#" class="hide-school">Kembali</a>
+                                </span>
+                                </div>
                             </div>
                         </div>
 
@@ -218,24 +235,27 @@
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title" id="termsLabel">Terms and conditions</h4>
+                <h4 class="modal-title" id="termsLabel">Nama Sekolah Tidak ditemukan.</h4>
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
             </div>
             <div class="modal-body">
-                <p>Lorem ipsum dolor sit amet, in porro albucius qui, in <strong>nec quod novum accumsan</strong>, mei
-                   ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne
-                   quod dicunt sensibus.</p>
-                <p>Lorem ipsum dolor sit amet, in porro albucius qui, in nec quod novum accumsan, mei ludus tamquam
-                   dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt
-                   sensibus. Lorem ipsum dolor sit amet, <strong>in porro albucius qui</strong>, in nec quod novum
-                   accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum
-                   sanctus, pro ne quod dicunt sensibus.</p>
-                <p>Lorem ipsum dolor sit amet, in porro albucius qui, in nec quod novum accumsan, mei ludus tamquam
-                   dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt
-                   sensibus.</p>
+                <p>Jika nama asal sekolah tidak ditemukan, Anda dapat menambahkanya melalui form dibawah.</p>
+                <div>
+                    <form id="form-add-school">
+                        <div class="form-group">
+                            <label for="school_name_new">Nama Sekolah</label>
+                            <input type="text" name="school_name_new" id="school_name_new" class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="school_address">Alamat Sekolah</label>
+                            <input type="text" name="school_address" id="school_address" class="form-control">
+                        </div>
+                    </form>
+                </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn_1" data-dismiss="modal">Close</button>
+                <button type="button" class="btn_1" data-dismiss="modal">Tutup</button>
             </div>
         </div>
         <!-- /.modal-content -->
@@ -269,6 +289,22 @@
         autoclose: true
     }).on("changeDate", function (e) {
 
+    });
+
+    $(".show-school").on("click", function (e) {
+        $('#school_name').removeClass("required");
+        $('#school_name_new').addClass("required");
+        $('#school_address').addClass("required");
+        $('#school_new').show();
+        $('#school_old').hide();
+    });
+
+    $(".hide-school").on("click", function (e) {
+        $('#school_new').hide();
+        $('#school_old').show();
+        $('#school_name_new').removeClass("required");
+        $('#school_address').removeClass("required");
+        $('#school_name').addClass("required");
     });
 
     document.getElementById('phone').addEventListener('input', function (e) {

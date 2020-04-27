@@ -93,7 +93,7 @@
                         <div class="center-block-body">
                             <h2 class="margin-bottom-20 animate-delay carousel-title-v1"
                                 data-animation="animated fadeInDown">
-                                Universitas Prof. Dr. Moestopo (Beragama) Peduli <span class="color-red">COVID-19</span>
+                                Universitas Prof. Dr. Moestopo (Beragama) <br>Peduli <span class="color-red">COVID-19</span>
                             </h2>
                             <div class="animated flipInX">
                                 <div class="subtitle">
