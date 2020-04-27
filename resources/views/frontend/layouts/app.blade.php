@@ -482,7 +482,7 @@
                         <div class="panel-heading">
                             <h5 class="panel-title">
                                 <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1"
-                                   href="#accordion1_3">Mengisi form pendaftaran sesuai program studi yang akan diambil.</a>
+                                   href="#accordion1_3">Melengkapi Formulir Pendaftaran.</a>
                             </h5>
                         </div>
                     </div>
@@ -490,23 +490,33 @@
                         <div class="panel-heading">
                             <h5 class="panel-title">
                                 <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1"
-                                   href="#accordion1_4">Mengikuti Ujian Saringan Masuk CBT Online, kecuali Anda yang raportnya memenuhi persyaratan  setelah mendapat konfirmasi.</a>
+                                   href="#accordion1_4">Ujian Saringan Masuk CBT Online</a>
                             </h5>
+                        </div>
+                        <div id="accordion1_4" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>Mengikuti Ujian Saringan Masuk CBT Online, kecuali Anda yang raportnya memenuhi persyaratan  setelah mendapat konfirmasi.</p>
+                            </div>
                         </div>
                     </div>
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h5 class="panel-title">
                                 <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1"
-                                   href="#accordion1_5">Khusus Pendaftar Fakultas Kedokteran Gigi melakukan Tes Wawancara dan Tes Kesehatan secara mandiri melalui lembaga yang kami rujukan.</a>
+                                   href="#accordion1_5">Tes Wawancara dan Kesehatan</a>
                             </h5>
+                        </div>
+                        <div id="accordion1_5" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>Khusus Pendaftar Fakultas Kedokteran Gigi melakukan Tes Wawancara dan Tes Kesehatan secara mandiri melalui lembaga yang kami rujukan.</p>
+                            </div>
                         </div>
                     </div>
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h5 class="panel-title">
                                 <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1"
-                                   href="#accordion1_5">Reminder Ujian Saringan Masuk via CBT Online dan ID Token akan kami konfirmasi H-1 sesuai jadwalnya.</a>
+                                   href="#accordion1_6">Reminder Ujian Saringan Masuk via CBT Online dan ID Token akan kami konfirmasi H-1 sesuai jadwalnya.</a>
                             </h5>
                         </div>
                     </div>
