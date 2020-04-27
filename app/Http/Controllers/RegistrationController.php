@@ -20,6 +20,22 @@ class RegistrationController extends Controller
         return redirect('/');
     }
 
+    public function check(Request $request)
+    {
+        $exist = Registrant::where('tgtes', $request->get("date"))->where('email', $request->get('email'))->first();
+
+        if ($exist) {
+            return response()->json([
+                'result' => 'error',
+                'message' => "Anda telah terdaftar pada Tanggal CBT Online tersebut."
+            ]);
+        }
+
+        return response()->json([
+            'result' => 'success',
+        ]);
+    }
+
     protected function getInitData(Request $request)
     {
         $departement         = Departement::where("kdjur", $request->get('kdju1'))->first();

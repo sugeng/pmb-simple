@@ -325,7 +325,8 @@
         e.target.value = !x[2] ? x[1] : '(' + x[1] + ') ' + x[2] + (x[3] ? '-' + x[3] : '');
     });
 
-    $('#exam_cbt').select2({
+    let $exam = $('#exam_cbt');
+    $exam.select2({
         placeholder: "Pilih Tanggal CBT Online",
         allowClear : true,
         ajax       : {
@@ -344,6 +345,21 @@
                 };
             }
         }
+    });
+
+    $exam.on('select2:select', function (e) {
+        $.ajax({
+            url: '/api/exam/check',
+            data: {
+                email: "{{ $data['email'] }}",
+                date: e.params.data.id
+            }
+        }).done(function (response) {
+            if (response.result === 'error') {
+                alert(response.message);
+                $exam.val(null).trigger('change');
+            }
+        });
     });
 
     $('#province').select2({

@@ -23,6 +23,6 @@ Route::get("test", function (\App\Libraries\Models\Exam $exam) {
 //    $r = $data->load("departement");
 //
 //    return $r;
-    return view("registration.email.confirmation");
+    return view("registration.confirmation_page");
     //return \App\Libraries\Models\RegistrationNumber::registrationNumber('2020', '4');
 });

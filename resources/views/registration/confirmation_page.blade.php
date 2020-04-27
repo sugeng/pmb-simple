@@ -62,27 +62,28 @@
                     </div>
                     <ul class="pricing-content list-unstyled" style="color: #f7ffec; margin-left: 50px; font-weight: bolder;">
                         <li>
-                            <i class="fa fa-tags"></i> Terdaftar pada tahun : <strong>{!! $registrant->thusm !!}</strong>
+                            <i class="fa fa-tags"></i> Terdaftar pada tahun : <strong>{!! $registrant->thusm ?? "" !!}</strong>
                         </li>
                         <li>
-                            <i class="fa fa-shopping-cart"></i> Terdaftar untuk Program Studi : <strong>{!! $registrant->departement->nmjur !!}</strong>
+                            <i class="fa fa-shopping-cart"></i> Terdaftar untuk Program Studi : <strong>{!! $registrant->departement->nmjur ?? "" !!}</strong>
                         </li>
                         <li>
-                            <i class="fa fa-asterisk"></i> Nama : <strong>{!! $registrant->nmmhs !!}</strong>
+                            <i class="fa fa-asterisk"></i> Nama : <strong>{!! $registrant->nmmhs ?? "" !!}</strong>
                         </li>
                         <li>
-                            <i class="fa fa-heart"></i> Nomor Registrasi : <strong> {!! $registrant->noreg !!}</strong>
+                            <i class="fa fa-heart"></i> Nomor Registrasi : <strong> {!! $registrant->noreg ?? "" !!}</strong>
                         </li>
                         <li>
-                            <i class="fa fa-star"></i> Tanggal CBT Online : <strong>{!! $registrant->tgtes->format("d F Y") !!}</strong>
+                            <i class="fa fa-star"></i> Tanggal CBT Online : <strong>{!! $registrant->tgtes->format("d F Y") ?? "" !!}</strong>
                         </li>
                         <li>
-                            <i class="fa fa-star"></i> Password CBT Online : <strong>{!! $registrant->nospc !!}</strong>
+                            <i class="fa fa-star"></i> Password CBT Online : <strong>{!! $registrant->nospc ?? "" !!}</strong>
                         </li>
                     </ul>
                 </div>
                 <!--//End Pricing -->
             </div>
+            <div style="padding: 15px; background: #DB3A1B; color: #f7ffec"><a href="{!! route("/") !!}" style="color:#ffffff;">Kembali ke Halaman Utama</a></div>
         </div>
         <!-- /content-right-->
     </div>

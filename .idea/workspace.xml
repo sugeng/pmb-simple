@@ -4,9 +4,10 @@
     <list default="true" id="705cc2e6-7771-449b-8434-f0adf1b53af3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/RegistrationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/RegistrationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Libraries/Models/Registrant.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Libraries/Models/Registrant.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Libraries/Registration/Registration.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Libraries/Registration/Registration.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/registration/confirmation_page.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/registration/confirmation_page.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/registration/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/registration/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -201,7 +202,7 @@
       <option name="presentableId" value="Default" />
       <updated>1587352290489</updated>
       <workItem from="1587352294611" duration="1990000" />
-      <workItem from="1587973730566" duration="7130000" />
+      <workItem from="1587973730566" duration="9099000" />
     </task>
     <servers />
   </component>
@@ -229,10 +230,10 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="452" y="338" key="NewPhpFileDialog/0.23.1280.777@0.23.1280.777" timestamp="1587907889916" />
-    <state width="500" height="445" key="SwitcherDM" timestamp="1587990803332">
+    <state width="500" height="445" key="SwitcherDM" timestamp="1587992938872">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="500" height="445" key="SwitcherDM/0.23.1280.777@0.23.1280.777" timestamp="1587990803332" />
+    <state width="500" height="445" key="SwitcherDM/0.23.1280.777@0.23.1280.777" timestamp="1587992938872" />
     <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1587799790983">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
