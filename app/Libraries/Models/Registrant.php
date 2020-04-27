@@ -194,5 +194,18 @@ class Registrant extends Model
         return $this->belongsTo(Departement::class, 'kdju1', 'kdjur');
     }
 
+    public function schoolProvince()
+    {
+        return $this->belongsTo(Province::class, 'prsma', 'id');
+    }
 
+    public function schoolRegency()
+    {
+        return $this->belongsTo(Regency::class, 'kbsma', 'id');
+    }
+
+    public function school()
+    {
+        return $this->belongsTo(School::class, 'kdsma', 'npsn');
+    }
 }

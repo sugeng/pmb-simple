@@ -78,7 +78,7 @@
 
                             <div class="form-group add_top_10">
                                 <label for="name">Nama Lengkap (Sesuai Akta/Ijasah terakhir)</label>
-                                <input type="text" name="name" id="name" class="form-control required"
+                                <input type="text" name="name" id="name" value="{!! $registrant->nmmhs ?? "" !!}" class="form-control required"
                                        onchange="getVals(this, 'name_field');">
                             </div>
 
@@ -90,7 +90,7 @@
 
                             <div class="form-group">
                                 <label for="phone">Mobile Phone</label>
-                                <input type="text" name="mobile_phone" id="phone" class="form-control required">
+                                <input type="text" name="mobile_phone" id="phone" value="{!! $registrant->hpper ?? "" !!}" class="form-control required">
                             </div>
 
                             <label>Pilih Tanggal CBT Online</label>
@@ -114,26 +114,38 @@
 
                             <div class="form-group add_top_10">
                                 <label for="nisn">N.I.S.N (Nomor Induk Sekolah Nasional)</label>
-                                <input type="text" name="nisn" id="nisn" class="form-control required" maxlength="10"
-                                       oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                                <input type="text" name="nisn" id="nisn" value="{!! $registrant->nisn ?? "" !!}" class="form-control required" maxlength="10"
+                                       ">
                             </div>
 
                             <div class="form-group">
                                 <label for="province">Propinsi</label>
                                 <select id="province" name="school_province" class="form-control required"
-                                        style="width: 100%"></select>
+                                        style="width: 100%">
+                                    @if (isset($registrant->prsma))
+                                        <option value="{!! $registrant->prsma !!}" selected="selected">{!! $registrant->schoolProvince()->first()->name !!}</option>
+                                    @endif
+                                </select>
                             </div>
 
                             <div class="form-group">
                                 <label for="regency">Kabupaten</label>
                                 <select id="regency" name="school_regency" class="form-control required"
-                                        style="width: 100%"></select>
+                                        style="width: 100%">
+                                    @if (isset($registrant->kbsma))
+                                        <option value="{!! $registrant->kbsma !!}" selected="selected">{!! $registrant->schoolRegency()->first()->name !!}</option>
+                                    @endif
+                                </select>
                             </div>
 
                             <div class="form-group add_top_10" id="school_old">
                                 <label for="school_name">Nama Sekolah</label>
                                 <select id="school_name" name="school_name" class="form-control required"
-                                        style="width: 100%"></select>
+                                        style="width: 100%">
+                                    @if (isset($registrant->kdsma) && !empty($registrant->kdsma))
+                                        <option value="{!! $registrant->kdsma !!}" selected="selected">{!! $registrant->school()->first()->nama_sekolah !!}</option>
+                                    @endif
+                                </select>
                                 <span style="font-size: 10px; text-decoration: underline">
                                     <a href="#" class="show-school">Nama Sekolah tidak ditemukan.</a>
                                 </span>
@@ -142,12 +154,12 @@
                             <div id="school_new" style="display: none">
                                 <div class="form-group">
                                     <label for="school_name_new">Nama Sekolah</label>
-                                    <input type="text" name="school_name_new" id="school_name_new" class="form-control">
+                                    <input type="text" name="school_name_new" id="school_name_new" value="{!! $registrant->nmsma ?? "" !!}" class="form-control">
                                 </div>
 
                                 <div class="form-group">
                                     <label for="school_address">Alamat Sekolah</label>
-                                    <input type="text" name="school_address" id="school_address" class="form-control">
+                                    <input type="text" name="school_address" id="school_address" value="{!! $registrant->alsma ?? "" !!}" class="form-control">
                                     <span style="font-size: 10px; text-decoration: underline">
                                     <a href="#" class="hide-school">Kembali</a>
                                 </span>
