@@ -487,7 +487,7 @@
                             <div id="accordion1_3" class="panel-collapse collapse">
                                 <div class="panel-body">
                                     <p>
-                                        Calon Mahasiswa baru harus mengisi dan melengkapi Formulir Pendaftaran Online dengan data yang sebenar-benarnya.
+                                        Lengkapi Formulir pendaftaran dan siapkan dokument raport dalam bentuk digital (scanning) mulai dari kelas X, XI, XII
                                     </p>
                                 </div>
                             </div>
