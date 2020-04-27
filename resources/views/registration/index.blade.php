@@ -85,7 +85,7 @@
 
                             <div class="form-group">
                                 <label for="email">Alamat Email</label>
-                                <input type="email" name="email" id="email" disabled="disabled" value="{{ $data['email'] }}" class="form-control disabled required"
+                                <input type="email" name="email" id="email" readonly="readonly" value="{{ $data['email'] }}" class="form-control disabled required"
                                        onchange="getVals(this, 'email_field');">
                             </div>
 
