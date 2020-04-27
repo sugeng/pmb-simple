@@ -83,7 +83,7 @@
                 </div>
                 <!--//End Pricing -->
             </div>
-            <div style="padding: 15px; background: #DB3A1B; color: #f7ffec"><a href="{!! route("/") !!}" style="color:#ffffff;">Kembali ke Halaman Utama</a></div>
+            <div style="padding: 15px; background: #DB3A1B; color: #f7ffec"><a href="{!! url("/") !!}" style="color:#ffffff;">Kembali ke Halaman Utama</a></div>
         </div>
         <!-- /content-right-->
     </div>
