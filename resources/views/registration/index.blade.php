@@ -83,20 +83,6 @@
                                        onchange="getVals(this, 'name_field');">
                             </div>
 
-                            <div class="form-group row">
-                                <div class="col-md-6">
-                                    <label for="birth_place">Tempat Lahir</label>
-                                    <input type="text" name="birth_place" id="birth_place"
-                                           class="form-control required">
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="birthday">Tanggal Lahir</label>
-                                    <input type="text" name="birthday" id="birthday"
-                                           class="form-control datepicker required">
-                                    <input type="hidden" id="formated_birthday" value="">
-                                </div>
-                            </div>
-
                             <div class="form-group">
                                 <label for="email">Alamat Email</label>
                                 <input type="email" name="email" id="email" disabled="disabled" value="{{ $data['email'] }}" class="form-control disabled required"
@@ -107,17 +93,7 @@
                                 <label for="phone">Mobile Phone</label>
                                 <input type="text" name="mobile_phone" id="phone" class="form-control required">
                             </div>
-                            <label>Jenis Kelamin</label>
-                            <div class="form-group radio_input">
-                                <label class="container_radio mr-3">Pria
-                                    <input type="radio" name="gender" value="L" class="required">
-                                    <span class="checkmark"></span>
-                                </label>
-                                <label class="container_radio">Wanita
-                                    <input type="radio" name="gender" value="P" class="required">
-                                    <span class="checkmark"></span>
-                                </label>
-                            </div>
+
                             <label>Pilih Tanggal CBT Online</label>
                             <div class="form-group">
                                 <label for="exam_cbt">Pilih Tanggal CBT Online</label>
