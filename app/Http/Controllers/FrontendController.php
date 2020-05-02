@@ -33,7 +33,7 @@ class FrontendController extends Controller
         $exam_by_departement = [];
         foreach ($departemens as $departemen) {
             $exam_dates = $exam->where("thusm", $registration_period->thusm)
-                              ->where('tgawl', ">=", $sekarang)
+                              ->where('tgtes', ">=", $sekarang)
                               ->whereRaw("INSTR(kdjur, '{$departemen->kdjur}') > 0")
                               ->orderBy('kdgel')
                               ->get();
