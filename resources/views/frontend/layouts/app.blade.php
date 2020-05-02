@@ -119,43 +119,48 @@
 <div class="about-block content content-center" id="gelombang">
     <div class="container">
         <h2>Jadwal Ujian Saringan Masuk <strong>CBT (Computer Based Test) Online</strong></h2>
-        <h4>
-            Mulai hari ini Universitas Prof. Dr. Moestopo (Beragama) <strong>meng-Gratiskan biaya Pendaftaran Mahasiswa Baru</strong>
-            baik jenjang S1 dan S2 sebagai bentuk keprihatinan <strong>Pandemi COVID-19</strong> yang melanda dunia.
-        </h4>
-        <h4>
-            Ujian Saringan Masuk (USM) dilakukan via online seperti yang tertera pada tabel jadwal dibawah ini melalui link <a href="https://pmb-cbt.moestopo.ac.id">CBT UPDM(B)</a>
-        </h4>
-        <h4>
-            Bagi Anda yang memiliki <strong>raport</strong> sesuai persyaratan kami, akan dinyatakan <strong>bebas Tes Ujian Saringan Masuk CBT Online</strong>
-        </h4>
+{{--        <h4>--}}
+{{--            Mulai hari ini Universitas Prof. Dr. Moestopo (Beragama) <strong>meng-Gratiskan biaya Pendaftaran Mahasiswa Baru</strong>--}}
+{{--            baik jenjang S1 dan S2 sebagai bentuk keprihatinan <strong>Pandemi COVID-19</strong> yang melanda dunia.--}}
+{{--        </h4>--}}
+{{--        <h4>--}}
+{{--            Ujian Saringan Masuk (USM) dilakukan via online seperti yang tertera pada tabel jadwal dibawah ini melalui link <a href="https://pmb-cbt.moestopo.ac.id">CBT UPDM(B)</a>--}}
+{{--        </h4>--}}
+{{--        <h4>--}}
+{{--            Bagi Anda yang memiliki <strong>raport</strong> sesuai persyaratan kami, akan dinyatakan <strong>bebas Tes Ujian Saringan Masuk CBT Online</strong>--}}
+{{--        </h4>--}}
 {{--        <h4>--}}
 {{--            Bagi Anda khususnya peminat <strong>Fakultas Kedokteran Gigi</strong>, selain Ujian Saringan Masuk CBT Online, diwajibkan melakukan <strong>Test Wawancara dan Kesehatan Mandiri</strong> sesuai rujukan kami. Kedua hasil tersebut wajib dikirim ke email kami di:  <strong><a href="mailto:pmb@moestopo.ac.id" target="_top">pmb.moestopo.ac.id</a></strong> atau melalui whatsapp <a href="https://bit.ly/pmbsesya"><i class="fa fa-whatsapp" aria-hidden="true"></i> 081315978785</a> atau <a href="https://bit.ly/pmbsukarta"><i class="fa fa-whatsapp" aria-hidden="true"></i> 6287886014786</a>--}}
 {{--        </h4>--}}
             @if (sizeof($exams) > 0)
                 @foreach($exams as $nmjur => $rows)
-                <table class="table">
+                <table class="table table-responsive table-bordered table-striped">
                     <thead>
                     <tr>
-                        <th colspan="2">
+                        <th colspan="4" class="color-red-v2" style="background: #b3d7ff">
                             Program Studi <strong>{{ $nmjur }}</strong>
                         </th>
                     </tr>
                     <tr>
-                        <th style="text-align: center">Gelombang</th>
                         <th style="text-align: center">Tanggal Pendaftaran</th>
                         <th style="text-align: center">Tanggal Ujian CBT Online</th>
                         <th style="text-align: center">Jam Ujian</th>
+                        <th style="text-align: center">Materi</th>
                     </tr>
                     </thead>
                     <tbody>
-                    @foreach ($rows as $row)
+                    @foreach($rows as $gelombang => $_rows)
                         <tr>
-                            <td>Gelombang {{ $row->kdgel }}</td>
-                            <td>{{ monthName($row->tgawl->format("Y-m-d")) }} s/d {{  monthName($row->tgakh->format("Y-m-d")) }}</td>
-                            <td>{{ monthName($row->tgtes->format("Y-m-d")) }}</td>
-                            <td>{{ waktuUjian($row->jmtes) }}</td>
+                            <th colspan="4">Gelombang {{ $gelombang }}</th>
                         </tr>
+                        @foreach ($_rows as $row)
+                            <tr>
+                                <td>{{ monthName($row->tgawl->format("Y-m-d")) }} s/d {{  monthName($row->tgakh->format("Y-m-d")) }}</td>
+                                <td>{{ monthName($row->tgtes->format("Y-m-d")) }}</td>
+                                <td>{{ waktuUjian($row->jmtes) }}</td>
+                                <td>{{ $row->nmtes }}</td>
+                            </tr>
+                        @endforeach
                     @endforeach
                     </tbody>
                 </table>

@@ -40,7 +40,7 @@ class FrontendController extends Controller
 
             if ($exam_dates) {
                 foreach ($exam_dates as $exam_date) {
-                    $exam_by_departement[$departemen->nmjur][] = $exam_date;
+                    $exam_by_departement[$departemen->nmjur][$exam_date->kdgel][] = $exam_date;
                 }
             }
         }
