@@ -37,6 +37,11 @@ function NamaTahunPMB($tahun) {
     return "{$tahun}/{$tahun1}";
 }
 
+function waktuUjian($jam)
+{
+    return substr_replace($jam, ":", 2, 0);
+}
+
 function jurusan($jurusan)
 {
     $key = explode(',', $jurusan);

@@ -202,6 +202,29 @@
                             </div>
                         </div>
 
+                        <div class="step">
+                            <h2 class="section_title">Quizioner</h2>
+                            <h3 class="main_question">Alasan Anda memilih Universitas Prof. Dr. Moestopo (Beragama)?</h3>
+
+                            <div class="form-group row">
+                                @foreach($quizes->chunk(7) as $rows)
+                                    <div class="col-md-6">
+                                        @foreach($rows as $quiz)
+                                            <label class="container_check version_2">{{ $quiz->answer }}
+                                                <input type="checkbox" name="quiz[]" value="{{ $quiz->id  }}" class="required {{ $quiz->else }}">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        @endforeach
+                                    </div>
+                                @endforeach
+                            </div>
+
+                            <div class="form-group" id="option_else" style="display: none">
+                                <label for="quiz_else">Sebutkan Alasan Lainnya</label>
+                                <input type="text" name="quiz_else" id="quiz_else" value="" class="form-control">
+                            </div>
+                        </div>
+
                         <div class="submit step" id="end">
                             <div class="summary">
                                 <div class="wrapper">
@@ -317,6 +340,11 @@
         $('#school_name_new').removeClass("required");
         $('#school_address').removeClass("required");
         $('#school_name').addClass("required");
+    });
+
+    $(".else").on("click", function (e) {
+       $('#option_else').show();
+       $('#option_else').addClass("required");
     });
 
     document.getElementById('phone').addEventListener('input', function (e) {

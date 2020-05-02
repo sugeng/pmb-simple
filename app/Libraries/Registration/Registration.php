@@ -1,6 +1,7 @@
 <?php namespace App\Libraries\Registration;
 
 use App\Libraries\Events\Registered;
+use App\Libraries\Models\Exam;
 use App\Libraries\Models\Registrant;
 use App\Libraries\Models\RegistrationNumber;
 use App\Libraries\Models\SpcNumber;
@@ -78,6 +79,26 @@ class Registration
 
     }
 
+    private function quizes(): array
+    {
+        if ($this->registration_data['quiz_else']) {
+            return [
+                'quizz_else' => $this->registration_data['quiz_else']
+            ];
+        }
+
+        return [
+            'quizz' => implode(', ', $this->registration_data['quiz'])
+        ];
+    }
+
+    private function getGelombang($tgtes, $kdjur)
+    {
+        $exam = (new Exam)->where('tgtes', $tgtes)->whereRaw("INSTR(kdjur, '{$kdjur}') > 0")->first();
+
+        if (isset($exam->kdgel)) return $exam->kdgel;
+    }
+
     private function storeRegistrant()
     {
         $this->registrant->create([
@@ -96,8 +117,10 @@ class Registration
             "kbsma" => $this->registration_data['school_regency'],
             "stpid" => $this->registration_data['registration_status'],
             "tgtes" => $this->registration_data['exam_cbt'],
+            "kdgel" => $this->getGelombang($this->registration_data['exam_cbt'], $this->registration_data['departement_code']),
             "useid" => "ONLINE",
-            "tgent" => \DB::raw("NOW()")
+            "tgent" => \DB::raw("NOW()"),
+            $this->quizes()
         ]);
     }
 }

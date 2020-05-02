@@ -1,4 +1,5 @@
 <?php namespace App\Http\Controllers;
+use App\Libraries\Models\Departement;
 use App\Libraries\Models\Exam;
 use App\Libraries\Models\RegistrationPeriod;
 
@@ -13,9 +14,7 @@ class FrontendController extends Controller
     {
         $registration_period = $period::periodActive();
 
-        $sekarang = date("Y-m-d");
-
-        $exams = $exam->where("thusm", $registration_period->thusm)->where('tgtes', ">=", $sekarang)->orderBy('kdgel')->get();
+        $exams = $this->examDates($registration_period, $exam);
 
         return view("frontend.layouts.app")->with(
           [
@@ -23,5 +22,29 @@ class FrontendController extends Controller
               "exams" => $exams
           ]
         );
+    }
+
+    protected function examDates($registration_period, Exam $exam)
+    {
+        $sekarang = date("Y-m-d");
+
+        $departemens = (new Departement)->whereNotIn('kdjur', ['16'])->orderBy('kdjur')->get();
+
+        $exam_by_departement = [];
+        foreach ($departemens as $departemen) {
+            $exam_dates = $exam->where("thusm", $registration_period->thusm)
+                              ->where('tgawl', ">=", $sekarang)
+                              ->whereRaw("INSTR(kdjur, '{$departemen->kdjur}') > 0")
+                              ->orderBy('kdgel')
+                              ->get();
+
+            if ($exam_dates) {
+                foreach ($exam_dates as $exam_date) {
+                    $exam_by_departement[$departemen->nmjur][] = $exam_date;
+                }
+            }
+        }
+
+        return $exam_by_departement;
     }
 }

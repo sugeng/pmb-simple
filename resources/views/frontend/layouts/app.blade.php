@@ -41,7 +41,7 @@
     <link href="{!! asset("assets/onepage/css/themes/red.css") !!}" rel="stylesheet" id="style-color">
     <link href="{!! asset("assets/onepage/css/custom.css") !!}" rel="stylesheet">
                                                          <!-- Theme styles END -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-bootstrap-4@3.1.4/bootstrap-4.min.css"
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-bootstrap-4@3.1.4/bootstrap-4.min.css">
 </head>
 <!--DOC: menu-always-on-top class to the body element to set menu on top -->
 <body class="menu-always-on-top">
@@ -118,7 +118,7 @@
 
 <div class="about-block content content-center" id="gelombang">
     <div class="container">
-        <h2>Pendaftaran Mahasiswa Baru <strong>Kampus Merah Putih</strong></h2>
+        <h2>Jadwal Ujian Saringan Masuk <strong>CBT (Computer Based Test) Online</strong></h2>
         <h4>
             Mulai hari ini Universitas Prof. Dr. Moestopo (Beragama) <strong>meng-Gratiskan biaya Pendaftaran Mahasiswa Baru</strong>
             baik jenjang S1 dan S2 sebagai bentuk keprihatinan <strong>Pandemi COVID-19</strong> yang melanda dunia.
@@ -129,38 +129,38 @@
         <h4>
             Bagi Anda yang memiliki <strong>raport</strong> sesuai persyaratan kami, akan dinyatakan <strong>bebas Tes Ujian Saringan Masuk CBT Online</strong>
         </h4>
-        <h4>
-            Bagi Anda khususnya peminat <strong>Fakultas Kedokteran Gigi</strong>, selain Ujian Saringan Masuk CBT Online, diwajibkan melakukan <strong>Test Wawancara dan Kesehatan Mandiri</strong> sesuai rujukan kami. Kedua hasil tersebut wajib dikirim ke email kami di:  <strong><a href="mailto:pmb@moestopo.ac.id" target="_top">pmb.moestopo.ac.id</a></strong> atau melalui whatsapp <a href="https://bit.ly/pmbsesya"><i class="fa fa-whatsapp" aria-hidden="true"></i> 081315978785</a> atau <a href="https://bit.ly/pmbsukarta"><i class="fa fa-whatsapp" aria-hidden="true"></i> 6287886014786</a>
-        </h4>
-
-        <table class="table">
-            <thead>
-            <tr>
-                <th style="text-align: center" colspan="2">
-                    Perkuliahan Semester Ganjil Tahun 2020, direncanakan September 2020
-            </tr>
-            <tr>
-                <th style="text-align: center">Gelombang</th>
-                <th style="text-align: center">Jadwal USM CBT Online</th>
-                <th style="text-align: center">Program Studi</th>
-            </tr>
-            </thead>
-            <tbody>
+{{--        <h4>--}}
+{{--            Bagi Anda khususnya peminat <strong>Fakultas Kedokteran Gigi</strong>, selain Ujian Saringan Masuk CBT Online, diwajibkan melakukan <strong>Test Wawancara dan Kesehatan Mandiri</strong> sesuai rujukan kami. Kedua hasil tersebut wajib dikirim ke email kami di:  <strong><a href="mailto:pmb@moestopo.ac.id" target="_top">pmb.moestopo.ac.id</a></strong> atau melalui whatsapp <a href="https://bit.ly/pmbsesya"><i class="fa fa-whatsapp" aria-hidden="true"></i> 081315978785</a> atau <a href="https://bit.ly/pmbsukarta"><i class="fa fa-whatsapp" aria-hidden="true"></i> 6287886014786</a>--}}
+{{--        </h4>--}}
             @if (sizeof($exams) > 0)
-                @foreach ($exams as $row)
+                @foreach($exams as $nmjur => $rows)
+                <table class="table">
+                    <thead>
                     <tr>
-                        <td>Gelombang {{ $row->kdgel }}</td>
-                        <td>{{ monthName($row->tgtes->format("Y-m-d")) }}</td>
-                        <td>{!! jurusan($row->kdjur) !!}  </td>
+                        <th colspan="2">
+                            Program Studi <strong>{{ $nmjur }}</strong>
+                        </th>
                     </tr>
+                    <tr>
+                        <th style="text-align: center">Gelombang</th>
+                        <th style="text-align: center">Tanggal Pendaftaran</th>
+                        <th style="text-align: center">Tanggal Ujian CBT Online</th>
+                        <th style="text-align: center">Jam Ujian</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    @foreach ($rows as $row)
+                        <tr>
+                            <td>Gelombang {{ $row->kdgel }}</td>
+                            <td>{{ monthName($row->tgawl->format("Y-m-d")) }} s/d {{  monthName($row->tgakh->format("Y-m-d")) }}</td>
+                            <td>{{ monthName($row->tgtes->format("Y-m-d")) }}</td>
+                            <td>{{ waktuUjian($row->jmtes) }}</td>
+                        </tr>
+                    @endforeach
+                    </tbody>
+                </table>
                 @endforeach
-            @else
-                <td colspan="2">Data tanggal ujian belum didatakan.</td>
             @endif
-            </tbody>
-        </table>
-
-
     </div>
 </div>
 

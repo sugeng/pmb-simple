@@ -9,13 +9,14 @@ class Exam extends \Illuminate\Database\Eloquent\Model
     protected $table = "tbuji";
 
     protected $dates = [
-        "tgtes"
+        "tgtes", "tgawl", "tgakh"
     ];
 
     public function search($registrasion_period, $departement_code)
     {
         $today_date = date("Y-m-d");
-        $exams = $this->where("tgtes", ">=", $today_date)
+
+        $exams = $this->whereRaw("'{$today_date}' BETWEEN tgawl AND tgakh")
                       ->where('thusm', $registrasion_period)
                       ->whereRaw("INSTR(kdjur, {$departement_code}) > 0")
                       ->orderBy("tgtes")
@@ -24,9 +25,11 @@ class Exam extends \Illuminate\Database\Eloquent\Model
         $result = [];
         if ($exams) {
             foreach ($exams as $exam) {
+                $waktu = waktuUjian($exam->jmtes);
+
                 $result[] = [
                     "id" => $exam->tgtes->format('Y-m-d'),
-                    "text" => "Gelombang {$exam->kdgel} Tanggal {$exam->tgtes->format('d F Y')}"
+                    "text" => "Gelombang {$exam->kdgel} Tanggal {$exam->tgtes->format('d F Y')} WAKTU {$waktu}"
                 ];
             }
         }

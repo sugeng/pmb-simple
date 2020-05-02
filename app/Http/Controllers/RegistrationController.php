@@ -41,11 +41,13 @@ class RegistrationController extends Controller
         $departement         = Departement::where("kdjur", $request->get('kdju1'))->first();
         $registration_period = RegistrationPeriod::periodActive();
         $registrant          = Registrant::where('email', $request->get('email'))->first();
+        $quizes              = \DB::table("pmb_answer_quiz")->where('active', "1")->where('question_id', '1')->get();
 
         return [
             'departement'         => $departement,
             'registration_period' => $registration_period,
-            'registrant'          => $registrant
+            'registrant'          => $registrant,
+            'quizes'              => $quizes
         ];
     }
 
