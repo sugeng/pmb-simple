@@ -461,12 +461,17 @@
                         <div class="panel-heading">
                             <h5 class="panel-title">
                                 <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1"
-                                   href="#accordion1_1">Jenjang S1 Fakultas Kedokteran.</a>
+                                   href="#accordion2_1">Fakultas Kedokteran Gigi</a>
                             </h5>
                         </div>
-                        <div id="accordion1_1" class="panel-collapse collapse in">
+                        <div id="accordion2_1" class="panel-collapse collapse in">
                             <div class="panel-body">
-                                <p>Untuk peserta yang akan memilih Fakultas Kedokteran harus merupakan tamatan SMA Jurusan IPA</p>
+                                <ul>
+                                    <li>Tamatan SMA IPA</li>
+                                    <li>Wajib Ujian Saringan Masuk CBT Online sesuai dijadwalkan ketika Registrasi.</li>
+                                    <li>Tes Wawancara via Telpon H+2 setelah dinyatakan LULUS CBT.</li>
+                                    <li>Tes Kesehatan Mandiri bagi yang dinyatakan LULUS CBT, yaitu <strong>Surat Dokter Tidak Buta Warna & Bebas Narkoba (dilakukan setelah masalah Corona selesai.)</strong></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -474,12 +479,20 @@
                         <div class="panel-heading">
                             <h5 class="panel-title">
                                 <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1"
-                                   href="#accordion1_2">Jenjang S1 Non Fakultas Kedokteran.</a>
+                                   href="#accordion2_2">Fakultas Teknik Industri dan Fakultas Teknik Pertambangan</a>
                             </h5>
                         </div>
-                        <div id="accordion1_2" class="panel-collapse collapse">
+                        <div id="accordion2_2" class="panel-collapse collapse">
                             <div class="panel-body">
-                                <p>Peserta merupakan tamatan dari SMA IPA/IPS atau SMK semua jurusan.</p>
+                                <ul>
+                                    <li>Tamatan SMA IPA atau SMK Jurusan Teknik.</li>
+                                    <li>Wajib Ujian Saringan Masuk CBT Online sesuai dijadwalkan ketika Registrasi, <strong>
+                                            kecuali untuk Nilai Raport semester 1-5 rata-rata bernilai 7.
+                                        </strong></li>
+                                    <li>Pendaftar yang dinyatakan bebas Ujian CBT akan dikonfirmasi H-1 dan jadwal CBT.</li>
+                                    <li>Tes Kesehatan Mandiri bagi yang dinyatakan Lulus CBT atau Bebas CBT, yaitu
+                                        <strong>Surat Dokter Tidak Buta Warna & Bebas Narkoba (dilakukan setelah masalah Corona selesai.)</strong></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -487,49 +500,19 @@
                         <div class="panel-heading">
                             <h5 class="panel-title">
                                 <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1"
-                                   href="#accordion1_3">Melengkapi Formulir Pendaftaran.</a>
+                                   href="#accordion2_3">Fakultas Ilmu Sosial & Politik, Fakultas Ekonomi & Bisnis dan Fakultas Komunikasi.</a>
                             </h5>
-                            <div id="accordion1_3" class="panel-collapse collapse">
+                            <div id="accordion2_3" class="panel-collapse collapse">
                                 <div class="panel-body">
-                                    <p>
-                                        Lengkapi Formulir pendaftaran dan siapkan dokument raport dalam bentuk digital (scanning) mulai dari kelas X, XI, XII
-                                    </p>
+                                    <ul>
+                                        <li>Tamatan SMA IPA atau SMK semua Jurusan.</li>
+                                        <li>Wajib Ujian Saringan Masuk CBT Online sesuai dijadwalkan ketika Registrasi, <strong>
+                                                kecuali untuk Nilai Raport semester 1-5 rata-rata bernilai 7.
+                                            </strong></li>
+                                        <li>Pendaftar yang dinyatakan bebas Ujian CBT akan dikonfirmasi H-1 dan jadwal CBT.</li>
+                                    </ul>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h5 class="panel-title">
-                                <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1"
-                                   href="#accordion1_4">Ujian Saringan Masuk CBT Online</a>
-                            </h5>
-                        </div>
-                        <div id="accordion1_4" class="panel-collapse collapse">
-                            <div class="panel-body">
-                                <p>Mengikuti Ujian Saringan Masuk CBT Online, kecuali Anda yang raportnya memenuhi persyaratan  setelah mendapat konfirmasi.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h5 class="panel-title">
-                                <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1"
-                                   href="#accordion1_5">Tes Wawancara dan Kesehatan</a>
-                            </h5>
-                        </div>
-                        <div id="accordion1_5" class="panel-collapse collapse">
-                            <div class="panel-body">
-                                <p>Khusus Pendaftar Fakultas Kedokteran Gigi melakukan Tes Wawancara dan Tes Kesehatan secara mandiri melalui lembaga yang kami rujukan.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h5 class="panel-title">
-                                <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1"
-                                   href="#accordion1_6">Reminder Ujian Saringan Masuk via CBT Online dan ID Token akan kami konfirmasi H-1 sesuai jadwalnya.</a>
-                            </h5>
                         </div>
                     </div>
                 </div>
