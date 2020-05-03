@@ -35,7 +35,7 @@ class FrontendController extends Controller
             $exam_dates = $exam->where("thusm", $registration_period->thusm)
                               ->where('tgtes', ">=", $sekarang)
                               ->whereRaw("INSTR(kdjur, '{$departemen->kdjur}') > 0")
-                              ->orderBy('kdgel')
+                              ->orderBy('kdgel')->orderBy('tgtes')
                               ->get();
 
             if ($exam_dates) {
