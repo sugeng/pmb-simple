@@ -506,11 +506,11 @@
                                 <div class="panel-body">
                                     <ul>
                                         <li>Tamatan SMA atau SMK semua Jurusan.</li>
-{{--                                        <li>Wajib Ujian Saringan Masuk CBT Online sesuai dijadwalkan ketika Registrasi, <strong>--}}
-{{--                                                kecuali untuk Nilai Raport semester 1-5 rata-rata bernilai 7.--}}
-{{--                                            </strong></li>--}}
-                                        <li>Nilai Raport semester 1-5 rata-rata bernilai 7</li>
-{{--                                        <li>Pendaftar yang dinyatakan bebas Ujian CBT akan dikonfirmasi H-1 dan jadwal CBT.</li>--}}
+                                        <li>Wajib Ujian Saringan Masuk CBT Online sesuai dijadwalkan ketika Registrasi, <strong>
+                                                kecuali untuk Nilai Raport semester 1-5 rata-rata bernilai 7.
+                                            </strong></li>
+{{--                                        <li>Nilai Raport semester 1-5 rata-rata bernilai 7</li>--}}
+                                        <li>Pendaftar yang dinyatakan bebas Ujian CBT akan dikonfirmasi H-1 dan jadwal CBT.</li>
                                     </ul>
                                 </div>
                             </div>
