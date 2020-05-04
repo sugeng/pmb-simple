@@ -505,11 +505,12 @@
                             <div id="accordion2_3" class="panel-collapse collapse">
                                 <div class="panel-body">
                                     <ul>
-                                        <li>Tamatan SMA IPA atau SMK semua Jurusan.</li>
-                                        <li>Wajib Ujian Saringan Masuk CBT Online sesuai dijadwalkan ketika Registrasi, <strong>
-                                                kecuali untuk Nilai Raport semester 1-5 rata-rata bernilai 7.
-                                            </strong></li>
-                                        <li>Pendaftar yang dinyatakan bebas Ujian CBT akan dikonfirmasi H-1 dan jadwal CBT.</li>
+                                        <li>Tamatan SMA atau SMK semua Jurusan.</li>
+{{--                                        <li>Wajib Ujian Saringan Masuk CBT Online sesuai dijadwalkan ketika Registrasi, <strong>--}}
+{{--                                                kecuali untuk Nilai Raport semester 1-5 rata-rata bernilai 7.--}}
+{{--                                            </strong></li>--}}
+                                        <li>Nilai Raport semester 1-5 rata-rata bernilai 7</li>
+{{--                                        <li>Pendaftar yang dinyatakan bebas Ujian CBT akan dikonfirmasi H-1 dan jadwal CBT.</li>--}}
                                     </ul>
                                 </div>
                             </div>
@@ -534,7 +535,7 @@
             </a>
             <a href="http://bit.ly/pmbsesya" target="_blank">
                 <div class="col-md-6 col-sm-6 col-xs-12 item"><i class="fa fa-whatsapp"></i>
-                    <h3>Ibu Shesa</h3>
+                    <h3>Ibu Seysha</h3>
                     <h1>0813 15978785</h1>
                 </div>
             </a>

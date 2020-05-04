@@ -1,4 +1,5 @@
 <?php namespace App\Http\Controllers;
+
 use App\Libraries\Models\Departement;
 use App\Libraries\Models\Exam;
 use App\Libraries\Models\RegistrationPeriod;
