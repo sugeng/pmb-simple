@@ -228,7 +228,7 @@
                         <div class="submit step" id="end">
                             <div class="summary">
                                 <div class="wrapper">
-                                    <h3>Terima kasih atas waktu Anda <br><span id="name_field"></span>!</h3>
+                                    <h3>Terima kasih atas waktu Anda <br><span id="name_field">{!! $registrant->nmmhs ?? "" !!}</span>!</h3>
                                     <p>Kami akan segera mengirimkan email notifikasi melalui email Anda di <strong>
                                             {!! $data['email'] !!}
                                         </strong></p>
