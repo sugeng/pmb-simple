@@ -490,7 +490,7 @@
                                     <li>Wajib Ujian Saringan Masuk CBT Online sesuai dijadwalkan ketika Registrasi, <strong>
                                             kecuali untuk Nilai Raport semester 1-5 rata-rata bernilai 7.
                                         </strong></li>
-                                    <li>Pendaftar yang dinyatakan bebas Ujian CBT akan dikonfirmasi H-1 dan jadwal CBT.</li>
+                                    <li>Pendaftar yang dinyatakan bebas Ujian CBT akan dikonfirmasi H-1 dari jadwal CBT.</li>
                                     <li>Tes Kesehatan Mandiri bagi yang dinyatakan Lulus CBT atau Bebas CBT, yaitu
                                         <strong>Surat Dokter Tidak Buta Warna & Bebas Narkoba (dilakukan setelah masalah Corona selesai.)</strong></li>
                                 </ul>
@@ -511,7 +511,7 @@
                                                 kecuali untuk Nilai Raport semester 1-5 rata-rata bernilai 7.
                                             </strong></li>
 {{--                                        <li>Nilai Raport semester 1-5 rata-rata bernilai 7</li>--}}
-                                        <li>Pendaftar yang dinyatakan bebas Ujian CBT akan dikonfirmasi H-1 dan jadwal CBT.</li>
+                                        <li>Pendaftar yang dinyatakan bebas Ujian CBT akan dikonfirmasi H-1 dari jadwal CBT.</li>
                                     </ul>
                                 </div>
                             </div>
