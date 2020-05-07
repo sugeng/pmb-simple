@@ -470,7 +470,7 @@
                                     <li>Tamatan SMA IPA</li>
                                     <li>Melunasi biaya formulir pendaftaran sebesar Rp. 500.000</li>
                                     <li>Wajib Ujian Saringan Masuk CBT Online sesuai dijadwalkan ketika Registrasi.</li>
-                                    <li>Tes Wawancara via Telpon H+2 setelah dinyatakan LULUS CBT.</li>
+                                    <li>Tes Wawancara via Telpon H s/d H+3 setelah dinyatakan LULUS CBT.</li>
                                     <li>Tes Kesehatan Mandiri bagi yang dinyatakan LULUS CBT, yaitu <strong>Surat Dokter Tidak Buta Warna & Bebas Narkoba (dilakukan setelah masalah Corona selesai.)</strong></li>
                                 </ul>
                             </div>
