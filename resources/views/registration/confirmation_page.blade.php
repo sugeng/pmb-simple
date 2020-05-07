@@ -60,7 +60,7 @@
                         </h3>
                         <h4>Selamat Anda telah berhasil melakukan Pendaftaran Online</h4>
                     </div>
-                    <ul class="pricing-content list-unstyled" style="color: #f7ffec; margin-left: 50px; font-weight: bolder;">
+                    <ul class="pricing-content list-unstyled" style="color: #f7ffec; margin-left: 50px; font-weight: bolder; font-size: 1.1875rem">
                         <li>
                             <i class="fa fa-tags"></i> Terdaftar pada tahun : <strong>{!! $registrant->thusm ?? "" !!}</strong>
                         </li>
@@ -102,6 +102,11 @@
                 </div>
                 <!--//End Pricing -->
             </div>
+            @if ($registrant->kdju1 == '11')
+            <div style="padding: 15px; background: #bce8f1; color: #23272b">
+                Anda dapat melakukan pembayaran formulir pendaftaran menggunakan NOSPC: <strong>{{ $registrant->nospc }}</strong> sesuai dengan harga formulir pendaftaran ke Bank BNI'46.
+            </div>
+            @endif
             <div style="padding: 15px; background: #DB3A1B; color: #f7ffec"><a href="{!! url("/") !!}" style="color:#ffffff;">Kembali ke Halaman Utama</a></div>
         </div>
         <!-- /content-right-->

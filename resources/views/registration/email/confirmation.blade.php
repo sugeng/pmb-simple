@@ -711,7 +711,7 @@
                         <tr>
                             <td align="left" class="tableSpacer"
                                 style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;table-spacing:0;padding:0;line-height:24px;height:24px;font-size:14px;text-align:center;">
-                                Anda dapat melakukan pembayaran formulir pendaftaran menggunakan NOSPC: <strong>{{ $registrant->nospc }}</strong> ke Bank BNI'46.
+                                Anda dapat melakukan pembayaran formulir pendaftaran menggunakan NOSPC: <strong>{{ $registrant->nospc }}</strong> sesuai dengan harga formulir pendaftaran ke Bank BNI'46.
                                 <br><br>
                             </td>
                         </tr>
