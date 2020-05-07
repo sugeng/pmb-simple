@@ -642,7 +642,13 @@
                                                     style="width:100% !important;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;table-spacing:0;padding:4px 0;font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;line-height:20px;font-weight:500;"
                                                     class="contentItemColumn sans-14-bold">Status Masuk: <span
                                                         class="text-transform-uppercase"
-                                                        style="text-transform:uppercase ;"></span> <em style="color: #16181b; font-weight: bolder; text-decoration: underline double maroon;text-underline-position: under;">{!! $registrant->stpid !!}</em>
+                                                        style="text-transform:uppercase ;"></span> <em style="color: #16181b; font-weight: bolder; text-decoration: underline double maroon;text-underline-position: under;">
+                                                        @if ($registrant->stpid == 'B')
+                                                            BARU
+                                                        @else
+                                                            PINDAHAN
+                                                        @endif
+                                                    </em>
 
                                                 </td>
                                             </tr>
