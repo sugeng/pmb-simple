@@ -667,6 +667,34 @@
                                             </tr>
 
                                             <tr>
+                                                <td width="100%"
+                                                    style="width:100% !important;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;table-spacing:0;padding:4px 0;font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;line-height:20px;font-weight:500;"
+                                                    class="contentItemColumn sans-14-bold">Harga Formulir :
+                                                    <em style="color: #16181b; font-weight: bolder; text-decoration: underline double maroon;text-underline-position: under;">
+                                                        @if ($registrant->kdju1 == '11')
+                                                            Rp. 500.000
+                                                        @else
+                                                            Rp. 0
+                                                        @endif
+                                                    </em>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td width="100%"
+                                                    style="width:100% !important;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;table-spacing:0;padding:4px 0;font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;line-height:20px;font-weight:500;"
+                                                    class="contentItemColumn sans-14-bold">No. SPC :
+                                                    <em style="color: #16181b; font-weight: bolder; text-decoration: underline double maroon;text-underline-position: under;">
+                                                        @if ($registrant->kdju1 == '11')
+                                                            {!! $registrant->nospc !!}
+                                                        @else
+                                                            -
+                                                        @endif
+                                                    </em>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
                                                 <td style="height:8px;line-height:8px;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;table-spacing:0;padding:0;"></td>
                                             </tr>
                                         </table>
@@ -679,6 +707,16 @@
                             </table>
                         </td>
                     </tr>
+                    @if ($registrant->kdju1 == '11')
+                        <tr>
+                            <td align="left" class="tableSpacer"
+                                style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;table-spacing:0;padding:0;line-height:24px;height:24px;font-size:14px;text-align:center;">
+                                Anda dapat melakukan pembayaran formulir pendaftaran menggunakan NOSPC: <strong>{{ $registrant->nospc }}</strong> ke Bank BNI'46.
+                                <br><br>
+                            </td>
+                        </tr>
+                    @endif
+
                     <tr>
                         <td class="tableSpacer"
                             style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;table-spacing:0;padding:0;line-height:24px;height:24px;"></td>

@@ -79,6 +79,25 @@
                         <li>
                             <i class="fa fa-star"></i> Password CBT Online : <strong>{!! $registrant->nospc ?? "" !!}</strong>
                         </li>
+                        <li>
+                            <i class="fa fa-shopping-cart"></i> Harga Formulir :
+                            <strong>
+                                @if ($registrant->kdju1 == '11')
+                                    Rp. 500.000
+                                @else
+                                    Rp. 0
+                                @endif
+                            </strong>
+                        </li>
+                        <li><i class="fa fa-asterisk"></i>No. SPC :
+                            <strong>
+                                @if ($registrant->kdju1 == '11')
+                                    {!! $registrant->nospc !!}
+                                @else
+                                    -
+                                @endif
+                            </strong>
+                        </li>
                     </ul>
                 </div>
                 <!--//End Pricing -->

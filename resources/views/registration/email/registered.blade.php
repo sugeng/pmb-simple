@@ -611,6 +611,24 @@
                                                                                     <li>Password :
                                                                                         <b>{{ $registrant->nospc }}</b>
                                                                                     </li>
+                                                                                    <li>Harga Formulir :
+                                                                                        <b>
+                                                                                            @if ($registrant->kdju1 == '11')
+                                                                                                Rp. 500.000
+                                                                                            @else
+                                                                                                Rp. 0
+                                                                                            @endif
+                                                                                        </b>
+                                                                                    </li>
+                                                                                    <li>No. SPC :
+                                                                                        <b>
+                                                                                            @if ($registrant->kdju1 == '11')
+                                                                                                {!! $registrant->nospc !!}
+                                                                                            @else
+                                                                                                -
+                                                                                            @endif
+                                                                                        </b>
+                                                                                    </li>
                                                                                 </ul>
                                                                             </div>
                                                                         </td>
