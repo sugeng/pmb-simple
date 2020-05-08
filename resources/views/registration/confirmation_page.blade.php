@@ -107,7 +107,7 @@
                 Anda dapat melakukan pembayaran formulir pendaftaran menggunakan NOSPC: <strong>{{ $registrant->nospc }}</strong> sesuai dengan harga formulir pendaftaran ke Bank BNI'46.
             </div>
             @endif
-            <div style="padding: 15px; background: #DB3A1B; color: #f7ffec"><a href="{!! url("/") !!}" style="color:#ffffff;">Kembali ke Halaman Utama</a></div>
+            <div style="padding: 15px; background: #DB3A1B; color: #f7ffec"><a href="{!! url("/") !!}" class="float-left" style="color:#ffffff;">Kembali ke Halaman Utama</a><a href="{!! url("/") !!}" class="float-rightt" style="color:#ffffff;">CBT Online</a></div>
         </div>
         <!-- /content-right-->
     </div>

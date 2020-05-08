@@ -722,7 +722,13 @@
                             </td>
                         </tr>
                     @endif
-
+                    <tr>
+                        <td align="left" class="tableSpacer"
+                            style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;table-spacing:0;padding:0;line-height:24px;height:24px;font-size:14px;text-align:center;">
+                            Untuk mengakses halaman CBT Online silakan klik <a href="https://pmb-cbt.moestopo.ac.id" target="_blank">https://pmb-cbt.moestopo.ac.id/</a> .
+                            <br><br>
+                        </td>
+                    </tr>
                     <tr>
                         <td class="tableSpacer"
                             style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;table-spacing:0;padding:0;line-height:24px;height:24px;"></td>
