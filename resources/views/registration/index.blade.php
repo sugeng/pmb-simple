@@ -89,7 +89,7 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="phone">Mobile Phone</label>
+                                <label for="phone">Mobile Phone (Memiliki Whatsapp)</label>
                                 <input type="text" name="mobile_phone" id="phone" value="{!! $registrant->hpper ?? "" !!}" class="form-control required">
                             </div>
 

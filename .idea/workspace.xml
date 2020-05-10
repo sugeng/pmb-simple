@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="705cc2e6-7771-449b-8434-f0adf1b53af3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/registration/confirmation_page.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/registration/confirmation_page.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/registration/email/confirmation.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/registration/email/confirmation.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/registration/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/registration/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,7 +206,10 @@
       <workItem from="1588399962135" duration="256000" />
       <workItem from="1588421574649" duration="3337000" />
       <workItem from="1588558135672" duration="1321000" />
-      <workItem from="1588566660077" duration="8583000" />
+      <workItem from="1588566660077" duration="9140000" />
+      <workItem from="1588989999526" duration="7422000" />
+      <workItem from="1589120560870" duration="44000" />
+      <workItem from="1589120624082" duration="3540000" />
     </task>
     <servers />
   </component>
@@ -213,10 +217,10 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="448" y="170" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1587867317592">
+    <state x="448" y="170" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1588991573629">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="448" y="170" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1280.777@0.23.1280.777" timestamp="1587867317592" />
+    <state x="448" y="170" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1280.777@0.23.1280.777" timestamp="1588991573629" />
     <state x="378" y="173" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1587906175862">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
@@ -225,18 +229,18 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="430" y="177" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0/0.23.1280.777@0.23.1280.777" timestamp="1587642655535" />
-    <state x="335" y="128" key="NewPhpClassDialog" timestamp="1587906159106">
+    <state x="335" y="128" key="NewPhpClassDialog" timestamp="1588991541942">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="335" y="128" key="NewPhpClassDialog/0.23.1280.777@0.23.1280.777" timestamp="1587906159106" />
-    <state x="452" y="338" key="NewPhpFileDialog" timestamp="1587907889928">
+    <state x="335" y="128" key="NewPhpClassDialog/0.23.1280.777@0.23.1280.777" timestamp="1588991541942" />
+    <state x="452" y="338" key="NewPhpFileDialog" timestamp="1589124344189">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="452" y="338" key="NewPhpFileDialog/0.23.1280.777@0.23.1280.777" timestamp="1587907889916" />
-    <state width="500" height="445" key="SwitcherDM" timestamp="1588945008898">
+    <state x="452" y="338" key="NewPhpFileDialog/0.23.1280.777@0.23.1280.777" timestamp="1589124344189" />
+    <state width="500" height="445" key="SwitcherDM" timestamp="1589124750397">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="500" height="445" key="SwitcherDM/0.23.1280.777@0.23.1280.777" timestamp="1588945008898" />
+    <state width="500" height="445" key="SwitcherDM/0.23.1280.777@0.23.1280.777" timestamp="1589124750397" />
     <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1587799790983">
       <screen x="0" y="23" width="1280" height="777" />
     </state>

@@ -68,7 +68,7 @@
                     <li><a href="#persyaratan">Syarat dan Kondisi</a></li>
                     <li><a href="#ujian">Kontak</a></li>
                     <li><a href="#formulir">Registrasi Online</a></li>
-                    <li><a href="#partner">Partner Kami</a></li>
+                    <li><a href="#status-lulus" data-toggle="modal" data-target="#status-lulus">Status Lulus</a></li>
                 </ul>
             </div>
             <!-- Navigation END -->
@@ -1038,6 +1038,52 @@
     </div>
 </div>
 
+<div id="status-lulus" class="modal fade bd-example-modal-lg" data-backdrop="static" style="margin-top: 80px;" tabindex="-1"
+     role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Status Kelulusan Calon Mahasiswa Baru UPDM(B)</h5>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-xs-12 col-sm-12">
+                            <div class="portlet-body">
+                                {{ Form::open([
+    'route' => "graduated.show",
+    'class' => 'form form-status-lulus',
+    'data-action' => route("graduated.check"),
+    'role' => 'form',
+    'method' => 'post']) }}
+                                <div class="form-body">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <div class="col-md-10">
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon"><i class="fa fa-envelope-o"></i></span>
+                                                        {{ Form::text('registration_number', '', ['class' => 'form-control', 'id' => 'registration_number', 'placeholder' => 'Nomor Registrasi Ujian']) }}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">TUTUP</button>
+                <button type="submit" id="registration-button" class="btn btn-success">CEK STATUS KELULUSAN</button>
+            </div>
+            {{ Form::close() }}
+        </div>
+    </div>
+</div>
+
 <!-- BEGIN FOOTER -->
 <div class="footer">
     <div class="container">
@@ -1103,6 +1149,30 @@
                         });
                     } else {
                         window.location = "{!! route('registration.index') !!}?" + form.serialize();
+                    }
+                }
+            });
+        });
+
+        $(".form-status-lulus").submit(function (e) {
+            e.preventDefault();
+
+            let form = $(this);
+            let url  = form.attr('data-action');
+
+            $.ajax({
+                type   : "GET",
+                url    : url,
+                data   : form.serialize(),
+                success: function (data) {
+                    if (data.result === "error") {
+                        Swal.fire({
+                            icon : 'error',
+                            title: data.title,
+                            text : data.message,
+                        });
+                    } else {
+                        e.currentTarget.submit();
                     }
                 }
             });
