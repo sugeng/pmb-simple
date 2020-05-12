@@ -10,13 +10,23 @@
             </div>
         </header>
         <section class="body">
-            <p>
-                Selamat <strong>{{ $registrant->nmmhs }}</strong>,
-                <br /><br />
-                Anda telah dinyatakan <strong>LULUS</strong> pada program studi pilihan <strong>KEDOKTERAN GIGI.</strong>
-                <br /><br />
-                Anda dapat mendownload <strong>Surat Keterangan Lulus</strong> sesuai dengan Program Studi yang Anda pilih.
-            </p>
+            @if ($registrant->kdju1 == '11')
+                <p>
+                    Selamat <strong>{{ $registrant->nmmhs }}</strong>,
+                    <br /><br />
+                    Anda telah dinyatakan <strong>LULUS</strong> pada program studi pilihan <strong>{{ $registrant->departement->nmjur }}</strong> dengan grade nilai <strong>{{ $registrant->grusm }}.</strong>
+                    <br /><br />
+                    Anda dapat mendownload <strong>Surat Keterangan Lulus</strong> sesuai dengan Program Studi yang Anda pilih.
+                </p>
+            @else
+                <p>
+                    Selamat <strong>{{ $registrant->nmmhs }}</strong>,
+                    <br /><br />
+                    Anda telah dinyatakan <strong>LULUS</strong> pada program studi pilihan <strong>{{ $registrant->departement->nmjur }}.</strong>\
+                    <br /><br />
+                    Anda dapat mendownload <strong>Surat Keterangan Lulus</strong> sesuai dengan Program Studi yang Anda pilih.
+                </p>
+            @endif
         </section>
         <footer>
             <a href="{!! url("/") !!}">Halaman Utama</a>
