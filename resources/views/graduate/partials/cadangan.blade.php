@@ -22,7 +22,7 @@
             <a href="{{ route('graduated.letter') }}?registration_number={{ $registrant->noreg }}" target="_blank"><i class="fa fa-download"></i> Surat Keterangan Lulus</a>
             <span><a href="{{ url('/') }}"><i class="fa fa-home"></i> Halaman Utama</a></span>
 
-            <a href="https://moestopo.ac.id/download-berkas-berkas-mahasiswa-baru" target="_blank"><i class="fa fa-asterisk"></i> Lampiran Surat Kelulusan</a>
+            <a href="https://moestopo.ac.id/download-berkas-berkas-mahasiswa-baru" target="_blank" style="margin-top: 10px;"><i class="fa fa-asterisk"></i> Download Dokumen Mahasiswa Baru</a>
         </footer>
     </div>
 </div>
