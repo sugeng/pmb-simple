@@ -16,7 +16,8 @@
         "intervention/image": "^2.5",
         "laravel/framework": "^7.0",
         "laravel/tinker": "^2.0",
-        "laravelcollective/html": "^6.1"
+        "laravelcollective/html": "^6.1",
+        "tecnickcom/tcpdf": "^6.3"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.3",

@@ -77,7 +77,7 @@
             position: absolute;
             top: 0;
             left: 0;
-            padding: 60px 10%;
+            padding: 60px 5%;
         }
         div.content-left,
         div.content-right{
@@ -113,7 +113,7 @@
         }
         div.content-left .content span:last-of-type,
         .confirmation span:last-of-type{
-            font-size: 20px;
+            font-size: 17px;
             font-weight: 600;
             margin-left: 30px
         }

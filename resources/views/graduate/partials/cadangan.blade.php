@@ -15,12 +15,14 @@
                 <br /><br />
                 Anda telah dinyatakan <strong>LULUS SEBAGAI CADANGAN</strong> pada program studi pilihan <strong>KEDOKTERAN GIGI.</strong>
                 <br /><br />
-                Anda dapat mendownload <strong>Surat Keterangan Lulus</strong> sesuai dengan Program Studi yang Anda pilih.
+                Anda dapat mendownload <strong><a href="{{ route('graduated.letter') }}?registration_number={{ $registrant->noreg }}" target="_blank">Surat Keterangan Lulus</a></strong> sesuai dengan Program Studi yang Anda pilih.
             </p>
         </section>
         <footer>
-            <a href="{!! url("/") !!}">Halaman Utama</a>
-            <span><a href="#"><i class="fa fa-download"></i> Surat Keterangan Lulus</a></span>
+            <a href="{{ route('graduated.letter') }}?registration_number={{ $registrant->noreg }}" target="_blank"><i class="fa fa-download"></i> Surat Keterangan Lulus</a>
+            <span><a href="{{ url('/') }}"><i class="fa fa-home"></i> Halaman Utama</a></span>
+
+            <a href="https://moestopo.ac.id/download-berkas-berkas-mahasiswa-baru" target="_blank"><i class="fa fa-asterisk"></i> Lampiran Surat Kelulusan</a>
         </footer>
     </div>
 </div>
