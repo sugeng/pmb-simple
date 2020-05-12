@@ -1060,9 +1060,9 @@
                                     <div class="row">
                                         <div class="col-md-12">
                                             <div class="form-group">
-                                                <div class="col-md-10">
+                                                <div class="col-md-12">
                                                     <div class="input-group">
-                                                        <span class="input-group-addon"><i class="fa fa-envelope-o"></i></span>
+                                                        <span class="input-group-addon"><i class="fa fa-user-secret"></i></span>
                                                         {{ Form::text('registration_number', '', ['class' => 'form-control', 'id' => 'registration_number', 'placeholder' => 'Nomor Registrasi Ujian']) }}
                                                     </div>
                                                 </div>
